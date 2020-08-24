@@ -294,26 +294,27 @@
     <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <form action="mail_handler2.php" method="post">
+          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <input class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></input><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </form>
+          <button class="btn btn-default pull-right" type="submit" name="submit">Enviar</button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- Image of location/map -->
+<!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">-->
 
-<!-- Image of location/map 
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> 
--->
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="fas fa-angle-up"></span>
