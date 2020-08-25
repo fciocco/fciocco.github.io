@@ -1,4 +1,4 @@
-  body {
+   body {
     font: 400 15px Lato, sans-serif; /*Dosis*/
     line-height: 1.8;
     color: #818181;
@@ -18,6 +18,7 @@
     font-weight: 400;
     margin-bottom: 30px;
   } 
+  p{font-size: 1.1rem;}
 #contact p {font-size: 1.1rem;} 
 
 .btn {border-radius: 3.5rem!important;
@@ -31,17 +32,25 @@
   background-color: #810920!important;
   border-color: #810920!important;
 }
-
 .btn-dark:hover {
   color: #fff;
   background-color: #a70c28!important;
   border-color: #a70c28!important;
 }
+.btn-light {
+  color: #810920!important;
+  background-color: #fff!important;
+  border: 2px solid #810920!important;
+}
+.btn-light:hover {
+  color: #fff!important; /* ocre: #f89f38*/
+  background-color: #810920!important;
+}
 
   .jumbotron {
     background-color: #810920; /* redish: #ca313c;*/
     color: #fff;
-    padding: 100px 25px;
+    padding: 30px 20px 20px 15px;
     font-family: Dosis, sans-serif; /*Montserrat*/
   }
   .container-fluid {
@@ -57,14 +66,17 @@
     color: #f4511e;
     font-size: 50px;
   }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
+  .maxw {
+    max-width: 200px;
   }
+
   .thumbnail {
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
+  }
+    .img-thumbnail {
+    padding: 15px 50px;
   }
   .thumbnail img {
     width: 100%;
@@ -122,7 +134,7 @@
  
   .card{transition: box-shadow 0.5s;}
   .card:hover {box-shadow: 5px 0px 40px rgba(129,9,32, .2);}
-  
+
   .panel-footer .btn:hover {
     border: 1px solid #810920;
     background-color: #fff !important;
@@ -163,13 +175,13 @@
     border: 0;
     font-size: 0.875rem !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 4px;
+    letter-spacing: 3.25px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
     box-sizing: border-box;
-    -webkit-box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.4);
-    -moz-box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.4);
-    box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.4);
+    -webkit-box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.2);
+    -moz-box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.2);
+    box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.2);
   }
 
 .navbar-brand{font-family: Dosis, sans-serif;
@@ -225,6 +237,7 @@ footer .fas, .fa {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
+footer{margin-top: 0px;margin-bottom: 0px;}
  .slideanim {visibility:hidden;}
  .slide {
     animation-name: slide;
