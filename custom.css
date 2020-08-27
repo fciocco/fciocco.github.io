@@ -1,4 +1,4 @@
-    body {
+   body {
     font: 400 15px Lato, sans-serif; /*Dosis*/
     line-height: 1.8;
     color: #818181;
@@ -28,6 +28,10 @@
   font-size: .9rem;
   letter-spacing: .1rem;}
 
+.btn-idioma {font-size: .65rem;
+  padding: 8.5px 17.5px !important; 
+  border: 1.5px solid #810920!important; }
+
 .btn-dark {
   color: #fff;
   background-color: #810920!important;
@@ -41,7 +45,7 @@
 .btn-light {
   color: #810920!important;
   background-color: #fff!important;
-  border: 2px solid #810920!important;
+  border: 2px solid #810920;
 }
 .btn-light:hover {
   color: #fff!important; /* ocre: #f8ae38*/
@@ -53,6 +57,7 @@
     color: #fff;
     padding: 30px 20px 20px 15px;
     font-family: Dosis, sans-serif; /*Montserrat*/
+    border-radius: 0!important;
   }
   .container-fluid {
     padding: 60px 50px;
@@ -271,7 +276,7 @@ footer{margin-top: 0px;margin-bottom: 0px;}
       margin: 25px 0;
     }
     #btn-int{text-align: center!important;}
-    .btn-light{
+    #btn-int>.btn-light{
       width: 86%;
       margin-bottom: 35px;
     }
@@ -332,14 +337,14 @@ nav ul li a:before {
 }
 
 /* SHIFT effect*/
-nav.shift ul li a {
+.shift {
   position:relative;
   z-index: 1;
 }
-nav.shift ul li a:hover {
+.shift:hover {
   color: #91640F;
 }
-nav.shift ul li a:after {
+.shift:after {
   display: block;
   position: absolute;
   top: 0;
@@ -356,7 +361,7 @@ nav.shift ul li a:after {
   opacity: 0;
   z-index: -1;
 }
-nav.shift ul li a:hover:after {
+.shift:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
@@ -446,4 +451,28 @@ nav.shift ul li a:hover:after {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+/* Icon Forward */
+.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.hvr-icon-forward .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+  -webkit-transform: translateX(7.8px);
+  transform: translateX(7.8px);
 }
