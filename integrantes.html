@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
  <!-- navbar  -->
  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
   <!-- Brand -->
@@ -36,7 +37,7 @@
       <li class="nav-item stroke dropdown">
         <span class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">QUIENES SOMOS</span>
         <div class="dropdown-menu">
-        	<a class="dropdown-item" href="#about" id="sobrenos">Acerca de URGAS</a>
+        	<a class="dropdown-item" href="index.html#about" id="sobrenos">Acerca de URGAS</a>
         	<a class="dropdown-item" href="#">Integrantes</a>
         </div>
       </li>
@@ -62,26 +63,26 @@
   </div>
 </nav> 
 
-<div class="jumbotron">
+<!--<div class="jumbotron">
 <div class="container-fluid">
  <div class="text-center">
   <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" style="width:150px; margin: 14px 0">	
   <!--<h1 style="color:#f89f38">URGAS</h1> -->
-  <h5>Tradu(c)toras</h5> 
+  <!--<h5>Tradu(c)toras</h5> 
   <h6 style="color:#ca313c">Español - Portugués - Inglés</h6>
  </div>
 </div>
-</div>
-
+</div>-->
+<br>
 <!-- Container (Integrantes) -->
 <div id="about" class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-md-8">
       <h2>Integrantes del equipo de trabajo:</h2><br>
       <h4>Nuestro equipo tiene diversas experiencias en <strong>traducciones</strong> y <strong>revisiones</strong> de texto en portugués, español e inglés así como también en <strong>escritura</strong> y revisión de manifiestos, cartas, proyectos culturales y registros metodológicos en estos 3 idiomas.</h4>
       <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
     </div>
-    <div class="col-sm-4 text-center my-auto">
+    <div class="col-md-4 text-center my-auto">
       <br><img src="imagenes/writing.svg" alt="equipo" width="220" class="img-fluid slideanim">
       <!--<span class="glyphicon glyphicon-globe logo slideanim"></span>-->
     </div>
@@ -134,28 +135,28 @@
   <h2 class="text-center">CONTACTO</h2>
   <h4 class="text-center">¡Comunicate con nosotras!</h4>
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-md-6">
       <p><span class="fab fa-whatsapp"></span> +00 1515151515</p>
       <p><span class="fas fa-envelope fa-at"></span> urgas@protonmail.com</p>
-      <p><span class="fas fa-map-marker-alt"></span> Chubut, Argentina</p>
+	  <p><span class="fas fa-map-marker-alt"></span> Chubut, Argentina</p>
       <h3>Seguínos en nuestras redes:</h3>
-      <p><span class="fab fa-facebook"></span><a target="_blank" href="https://www.facebook.com/urgas.traducciones.3/"> urgas.traducciones.3</a></p>
-      <p><span class="fab fa-instagram"></span> <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/">u.r.g.a.s</a></p>
+      <p><span class="fab fa-facebook"></span><a target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"> FACEBOOK</a></p>
+      <p><span class="fab fa-instagram"></span> <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/">INSTAGRAM</a></p>
     </div>
-    <div class="col-sm-7 slideanim">
+    <div class="col-md-6 slideanim">
      <!--<p>Contactanos y te responderemos tan pronto como sea posible.</p>-->
      <form action="mail_handler2.php" method="post">
       <div class="row">
-        <div class="col-sm-6 form-group">
+        <div class="col-md-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
         </div>
-        <div class="col-sm-6 form-group">
+        <div class="col-md-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
       <textarea class="form-control" id="comments" name="comments" placeholder="Tu consulta" rows="5"></textarea><br>
       <div class="row">
-        <div class="col-sm-12 form-group">
+        <div class="col-md-12 form-group">
           <button class="btn btn-dark float-right" type="submit" name="submit">Enviar</button>
         </div>
       </div>
@@ -163,6 +164,7 @@
     </div>
   </div>
 </div>
+
 <!-- Image of location/map -->
 <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">-->
 
@@ -184,7 +186,7 @@ $(function() {
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $("footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       //Prevent default anchor click behavior
@@ -204,7 +206,7 @@ $(document).ready(function(){
       });
     } // End if
   });
-  
+  //
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
