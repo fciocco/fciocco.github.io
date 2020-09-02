@@ -6,7 +6,7 @@
   width: 50px;
   height: 35.46px;
   cursor: pointer;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 3px solid  #fff;
   border: 1px solid rgba(255,255,255,.1);
   border-radius: 0.25rem;
@@ -17,7 +17,7 @@
   background-color: rgba(255,255,255,.9);
   border-radius: 2.5px;
   box-shadow: 0 1px 1.5px rgba(248, 174, 56,.25);
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before,
 .menu-btn__burger::after{
@@ -28,7 +28,7 @@
   background-color: rgba(255,255,255,.9);
   border-radius: 2.5px;
   box-shadow: 0 1px 1.5px rgba(248, 174, 56,.25);
-  transition: all .6s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 .menu-btn__burger::before{
   transform: translateY(-6.5px);
