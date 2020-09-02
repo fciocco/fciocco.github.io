@@ -13,7 +13,7 @@
    height="603.5"
    viewBox="0 0 826.30527 603.5"
    version="1.1"
-   sodipodi:docname="undraw_gift_card.svg"
+   sodipodi:docname="entrega_trad.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata99">
@@ -83,8 +83,8 @@
      inkscape:window-height="668"
      id="namedview95"
      showgrid="false"
-     inkscape:zoom="1.26"
-     inkscape:cx="615.00432"
+     inkscape:zoom="0.63"
+     inkscape:cx="337.22654"
      inkscape:cy="288.37129"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -92,14 +92,6 @@
      inkscape:current-layer="bb5d7bf9-f1d1-4967-8b85-2debba85734f" />
   <title
      id="title2">gift card</title>
-  <rect
-     x="343.05673"
-     y="42.5"
-     width="180"
-     height="24"
-     rx="5.42126"
-     fill="#ca313c"
-     id="rect4" />
   <rect
      x="321.05673"
      y="0.5"
@@ -109,17 +101,8 @@
      fill="none"
      stroke="#3f3d56"
      stroke-miterlimit="10"
-     id="rect6" />
-  <rect
-     x="348.05673"
-     y="35.5"
-     width="180"
-     height="24"
-     rx="5.42126"
-     fill="none"
-     stroke="#3f3d56"
-     stroke-miterlimit="10"
-     id="rect8" />
+     id="rect6"
+     style="fill:#ffffff;fill-opacity:1;opacity:0.91" />
   <rect
      x="366.55673"
      y="123.5"
@@ -427,4 +410,22 @@
          sodipodi:nodetypes="cccscscccccccscccscsscsscsscscscccccccscccssscc" />
     </g>
   </g>
+  <rect
+     x="343.05673"
+     y="42.5"
+     width="180"
+     height="24"
+     rx="5.42126"
+     fill="#ca313c"
+     id="rect4" />
+  <rect
+     x="348.05673"
+     y="35.5"
+     width="180"
+     height="24"
+     rx="5.42126"
+     fill="none"
+     stroke="#3f3d56"
+     stroke-miterlimit="10"
+     id="rect8" />
 </svg>
