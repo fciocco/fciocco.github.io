@@ -372,6 +372,9 @@ button.navbar-toggler:focus{outline: none!important;}
   @media screen and (max-width: 700px) {
    .col {width: 100%!important;}
   }
+  @media screen and (max-width: 500px) {
+   .card {margin: 0 -30px;}
+  }
  /* ---- Special hover effects ----*/
 
 nav ul li a,
