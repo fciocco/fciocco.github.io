@@ -291,7 +291,7 @@ button.navbar-toggler:focus{outline: none!important;}
 
 /*.navbar-toggler.menu-btn {padding: 0!important;}*/
 
-#collapsibleNavbar {transition: height 0.75s ease;} /*slower unfold time, sync with burger btn animation*/
+#collapsibleNavbar {transition: height 0.6s ease;} /*slower unfold time, sync with burger btn animation*/
 
 #navbardrop {cursor: default;}
 
