@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- my CSS -->
   <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="menuBurger.css">
   <!--  Import Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -22,14 +23,12 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
  <!-- navbar  -->
- <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <!-- Brand -->
   <a class="navbar-brand" href="index.html"><img src="imagenes/urgas-ocre.svg" alt="URGAS" style="width:55px; margin-bottom:2px;"></a>
 
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-  <span class="navbar-toggler-icon"></span>
-  </button>
+  <!-- Custom Toggler Button -->
+  <div class="menu-btn navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar"><div class="menu-btn__burger" ></div></div>
   <!-- Navbar links -->
   <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
     <ul class="navbar-nav">
@@ -38,14 +37,14 @@
         <span class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">QUIENES SOMOS</span>
         <div class="dropdown-menu">
         	<a class="dropdown-item" href="index.html#about" id="sobrenos">Acerca de URGAS</a>
-        	<a class="dropdown-item" href="#">Integrantes</a>
+        	<a class="dropdown-item" href="#" id="item2">Integrantes</a>
         </div>
       </li>
       <li class="nav-item stroke">
         <a class="nav-link" href="index.html#services">SERVICIOS</a>
       </li>
       <li class="nav-item stroke">
-        <a class="nav-link" href="index.html#portfolio">PORFOLIO</a>
+        <a class="nav-link" href="index.html#portfolio">NUESTRAS TRADUCCIONES</a>
       </li>
       <!--<li class="nav-item stroke">
         <a class="nav-link" href="index.html#pricing">PRECIOS</a>
@@ -68,18 +67,22 @@
  <div class="text-center">
   <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" style="width:150px; margin: 14px 0">	
   <!--<h1 style="color:#f89f38">URGAS</h1> -->
-  <!--<h5>Tradu(c)toras</h5> 
+  <!--<h5>Tradu.c.toras</h5> 
   <h6 style="color:#ca313c">Español - Portugués - Inglés</h6>
  </div>
 </div>
 </div>-->
+
+<!-- backTo Top btn -->
+<a href="#" id="toTopBtn" class="cd-top hvr-float" data-abc="true"></a>
+
 <br>
 <!-- Container (Integrantes) -->
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-md-8">
       <h2>Integrantes del equipo de trabajo:</h2><br>
-      <h4>Nuestro equipo tiene diversas experiencias en <strong>traducciones</strong> y <strong>revisiones</strong> de texto en portugués, español e inglés así como también en <strong>escritura</strong> y revisión de manifiestos, cartas, proyectos culturales y registros metodológicos en estos 3 idiomas.</h4>
+      <h4>Nuestro equipo tiene diversas experiencias en <strong>traducción</strong>, <strong>revisión</strong> e <strong>interpretación</strong> en portugués, español e inglés, así como también en <strong>escritura</strong> de ensayos, cartas, proyectos culturales y registros metodológicos en estos 3 idiomas.</h4>
       <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
     </div>
     <div class="col-md-4 text-center my-auto">
@@ -93,46 +96,46 @@
 <!-- Container (Team Section) -->
 <div id="team" class="container-fluid text-center bg-grey">
   <div class="text-center">
-    <h2>Somos Urgas</h2>
+    <h2 class="headline">Somos Urgas</h2>
   </div>
   <div class="row slideanim">
     <div class="col-md-4 col-12">
-      <div class="card text-center">
+      <div class="card text-center hvr-float">
         <div class="card-header">
-          <h1>Alice Maria Teresa</h1>
+          <h1>Alice Nunes Fonseca</h1>
         </div>
         <div class="card-body">
-        <p>[ESP] Feminista interseccional, arte-educadora, artivista, coordinadora de proyectos sociales y trabajadora del Teatro de las Oprimidas. Formación universitaria y maestría en la Universidade Estadual Paulista - Unesp, São Paulo - Brasil. Como traductora trabaja desde 2014 con textos sobre arte y feminismo, contenido para redes sociales y traducción en vivo. </p>
+        <p>Magister en Artes Escénicas (2012-2015) y Licenciada en Arte Educación (2008-2012) por la Universidade Estadual Paulista - Unesp, São Paulo - Brasil. Docente y coordinadora de proyectos culturales. Traductora e intérprete desde 2014, con especial interés en contenido sobre arte e feminismos. </p>
         </div>
       </div>      
     </div>     
     <div class="col-md-4 col-12">
-      <div class="card text-center">
+      <div class="card text-center hvr-float">
         <div class="card-header">
           <h1>Carolina Ciocco Aloia</h1>
         </div>
         <div class="card-body">
-        <p>[ESP] Licenciada en Letras. Docente de lengua y literatura en la escuela secundaria desde el año 2002. Profesora particular de lengua y literatura. Asesora y correctora de textos académicos y literarios. Profesora de Español para personas extranjeras en la ciudad de Puerto Madryn.  Integrante de la colectiva Ma(g)dalenas Puerto Madryn desde 2017. Revisora de la comunicación general y contenidos en redes de Ma(g)dalenas Puerto Madryn.</p>
+        <p>Licenciada en Letras. Docente de lengua y literatura en la escuela secundaria desde el año 2002. Profesora particular de lengua y literatura. Asesora y correctora de textos académicos y literarios. Profesora de Español para personas extranjeras en la ciudad de Puerto Madryn.  Integrante de la colectiva Ma(g)dalenas Puerto Madryn desde 2017. Revisora de la comunicación general y contenidos en redes de Ma(g)dalenas Puerto Madryn.</p>
         </div>
       </div>      
     </div>          
     <div class="col-md-4 col-12">
-      <div class="card text-center">
+      <div class="card text-center hvr-float">
         <div class="card-header">
-          <h1>Sarah Reinman</h1>
+          <h1>Sarah Reimann</h1>
         </div>
         <div class="card-body">
-        <p>[ESP] Maestra de idiomas, licenciada en teatro y traductora en los idiomas Español, Inglés y Portugués (lengua nativa). Intérprete en vivo en Encuentros Internacionales de Teatro de las Personas Oprimidas (TO) desde 2009 y traductora de materiales visuales y divulgaciones de estos eventos. Integrante de la colectiva Magdas en Acción (Buenos Aires/Argentina). Multiplicadora y feminista en TO en Brasil y otros países de Latinoamérica.</p>
+        <p>Maestra de idiomas, licenciada en teatro y traductora en los idiomas Español, Inglés y Portugués (lengua nativa). Intérprete en vivo en Encuentros Internacionales de Teatro de las Personas Oprimidas (TO) desde 2009 y traductora de materiales visuales y divulgaciones de estos eventos. Integrante de la colectiva Magdas en Acción (Buenos Aires/Argentina). Multiplicadora y feminista en TO en Brasil y otros países de Latinoamérica.</p>
         </div>
       </div>      
     </div>    
   </div>
-  <br><a href="index.html"><button class="btn btn-light" style="margin-top:18px; margin-bottom:-30px">Regresar a página principal</button></a><br>
+  <br><a href="index.html#about"><button class="btn btn-light" style="margin-top:18px; margin-bottom:-30px">Regresar a página principal</button></a><br>
 </div>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid">
-  <h2 class="text-center">CONTACTO</h2>
+  <h2 class="text-center headline">CONTACTO</h2>
   <h4 class="text-center">¡Comunicate con nosotras!</h4>
   <div class="row">
     <div class="col-md-6">
@@ -174,7 +177,36 @@
   </a>
   <p>Website made by F. Ciocco Aloia<br>fciocco@gmail.com</p>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
 
+    //check the dark mode status set in home page to activate it here also.
+     var darkOn = localStorage.getItem('modeOn');
+
+     if (darkOn == "true") {
+         //console.log('dark mode on');
+         $("body").addClass("dark");
+     }
+     else {
+         //console.log('dark mode off');
+         $("body").removeClass("dark");
+     }
+
+</script>
+  <script>
+    // for burger menu transformation
+  const menuBtn = document.querySelector('.menu-btn');
+  let menuOpen = false;
+  menuBtn.addEventListener('click', () => {
+    if(!menuOpen){
+      menuBtn.classList.add('open');
+      menuOpen = true;
+    } else{
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+    }
+  });
+</script>
 <script>
 /*unfold dropdown menu when link is clicked*/
 $(function() {
