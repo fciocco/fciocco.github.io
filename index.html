@@ -4,52 +4,74 @@
   <title>URGAS traducciones</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- my CSS -->
   <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="menuBurger.css">
   <!--  Import Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400,700&display=swap" rel="stylesheet"> 
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
   <!-- Font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<!--- toggle --->
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<!-- top navbar -->
+  <!---- TOP NAVBAR ---->
  <nav class="navbar navbar-light bg-light navbar-expand-md justify-content-start" id="nav0">
-<!-- cambiar idioma -->
-  <a href="pt/index.html"><button class="btn btn-light btn-idioma hvr-icon-forward">ES <span class="fa fa-chevron-circle-right hvr-icon "></span>&nbsp Português</button></a>
- </nav>
+    <!-- switch lang  -->
+  <a href="pt/index.html"><button class="btn btn-light btn-small hvr-icon-forward">ESP <span class="fa fa-chevron-circle-right hvr-icon"></span>&nbsp Português</button></a>
+
+   <!-- dark mode  -->
+<span>&nbsp</span><button title="Cuida tus ojos"class="btn btn-light btn-small hvr-icon-spin" id="switch"><span class="fas fa-adjust hvr-icon"></span><span class="invert"></span></button>
+ <span>&nbsp</span>
+
+ <!--<button title="Cuida tus ojos"class="btn btn-light btn-small" id="switchBtn">
+  <div class="custom-control custom-control-right custom-switch">
+      <input type="checkbox" class="switch-sm custom-control-input" id="customSwitch1">
+      <label class="custom-control-label" for="customSwitch1">Modo oscuro</label>
+  </div></button>-->
+  </nav>
+  
  <!-- navbar  -->
- <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
   <!-- Brand -->
   <a class="navbar-brand" href="index.html"><img src="imagenes/urgas-ocre.svg" alt="URGAS" style="width:55px; margin-bottom:2px;"></a>
   
   <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
   <span class="navbar-toggler-icon"></span>
-  </button>
+  </button>-->
+
+  <!-- Custom Toggler Button -->
+  <div class="menu-btn navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar"><div class="menu-btn__burger" ></div></div>
+  
   <!-- Navbar links -->
   <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
     <ul class="navbar-nav">
     <!-- Dropdown -->
       <li class="nav-item stroke dropdown">
         <span class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">QUIENES SOMOS</span>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu text-center">
         	<a class="dropdown-item" href="#about" id="sobrenos">Acerca de URGAS</a>
-        	<a class="dropdown-item" href="integrantes.html">Integrantes</a>
+        	<a class="dropdown-item" href="integrantes.html" id="item2">Integrantes</a>
         </div>
       </li>
       <li class="nav-item stroke">
         <a class="nav-link" href="#services">SERVICIOS</a>
       </li>
       <li class="nav-item stroke">
-        <a class="nav-link" href="#portfolio">PORFOLIO</a>
+        <a class="nav-link" href="#portfolio">NUESTRAS TRADUCCIONES</a>
       </li>
       <!--<li class="nav-item stroke">
         <a class="nav-link" href="#pricing">PRECIOS</a>
@@ -59,8 +81,8 @@
       </li>      
     </ul>
     <!--<div class="social-slidebars">-->
-    <ul class="navbar-nav ml-lg-3" id="nav-icons">
-      <li class="mr-1 horiz-links"><a target="_blank" href="https://www.facebook.com/urgas.traducciones.3/"><span class="fab fa-facebook-square"></span></i>
+    <ul class="navbar-nav ml-lg-2" id="nav-icons">
+      <li class="mr-1 horiz-links"><a target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"><span class="fab fa-facebook"></span></i>
       <a class="ml-1" target="_blank" href="https://www.instagram.com/u.r.g.a.s/"><span class="fab fa-instagram"></span></a></li>
     </ul>
     <!--</div>-->
@@ -69,33 +91,40 @@
 
 <div class="jumbotron">
 <div class="container-fluid">
-<!--<div class="row">
-  <div class="col-sm-4 text-center">
-  <img src="imagenes/logo-circle2.svg" width="140" alt="">
+<div class="row">
+    <div class="col-md-7">
+    <h3 style="color:#fff; text-transform: none;text-align: right;">Tradu<span>.c</span><span style="color:#f8ae38">.toras</span></h3> 
+  <h3 id="idiomas" style="color:#f8ae38; font-size: 1.0vw; text-align: right;">~ &nbspEspañol&nbsp<br> ^&nbsp Portugués&nbsp<br>&&nbsp Inglés&nbsp</h3>
   </div>
- --> 
-<div class="text-center">
-  <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" style="width:150px; margin: 14px 0">	
-  <!--<h1 style="color:#f89f38">URGAS</h1> -->
-  <h5>Tradu(c)toras</h5> 
-  <h6 style="color:#ca313c">Español - Portugués - Inglés</h6>
+  <div class="col-md-5 text-center"><img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" class="logo"></div>
+
+
+<!--<div class="text-center">
+  <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" class="logo">	
+  <h3 style="color:#fff; text-transform: none">Tradu.c<span style="color:#ca313c">.toras</span></h3> 
 </div>
+  <h3 style="color:#ca313c; text-transform: none; font-size: 1.0vw;">Español<br>Portugués<br>Inglés</h3>
+</div>-->
 
 </div>
 </div>
-</div>
+</div> <!-- End Jumbo header -->
 
+
+<!-- backTo Top btn -->
+<a href="#" id="toTopBtn" class="cd-top hvr-float" data-abc="true"></a>
+<!--<a class="to-top" style="display: block;"><i class="fa fa-angle-up"></i></a>-->
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-md-8">
       <h2>Somos Urgas Traductoras, un gusto!</h2><br>
-      <h4>Realizamos traducciones y revisiones en los idiomas: <b>español, portugués e inglés</b>. Trabajamos con una diversidad de formatos textuales, como comunicados, informes, artículos, ensayos, poemas, proyectos culturales, textos periodísticos, publicaciones para redes sociales, trabajos académicos y más! Queremos traducir tus palabras, ¡comunícate con nosotras!</h4>
+      <h4>Realizamos traducciones y revisiones en los idiomas: <b>español, portugués e inglés</b>. Trabajamos con una diversidad de formatos textuales, como comunicados, informes, artículos, ensayos, proyectos culturales, textos periodísticos, publicaciones para redes sociales, trabajos académicos y más! Queremos traducir tus ideas, ¡comunícate con nosotras!</h4>
       <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
-      <br><a href="integrantes.html"><div id="btn-int"><button class="btn btn-light">Integrantes</button></div></a>
+      <br><a href="integrantes.html"><div id="btn-int"><button class="btn btn-light r_arrow">Integrantes</button></div></a>
     </div>
-    <div class="col-sm-4 text-center my-auto">
+    <div class="col-md-4 text-center my-auto">
       <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" width="160" class="img-fluid slideanim">
       <!--<span class="glyphicon glyphicon-globe logo slideanim"></span>-->
     </div>
@@ -119,7 +148,7 @@
 </div>-->
 <!--  slider-frases  -->
 <div class="container-fluid text-center bg-grey">
-  <h2>frase (?)</h2>
+  <h2 class="headline">algún título?</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-interval="7500">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -160,7 +189,9 @@
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
-  <h2>SERVICIOS</h2>
+  <h2 class="headline">SERVICIOS
+  <span class="headlineIcon"></span>
+  </h2>
   <h4>Qué ofrecemos</h4>
   <br>
   <div class="row slideanim">
@@ -194,13 +225,14 @@
     </div>
   </div>-->
   <div class="col-sm-12">
-    <div class="card slideanim">
+    <div class="card slideanim hvr-grow">
       <div class="card-header text-center">
-        <h1>Para recibir la propuesta de traducción, por favor:</h1>
+        <h1>Para recibir la propuesta de presupuesto, por favor:</h1>
       </div>
       <div class="card-body">
         <p>1. Enviar un mail a urgas@protonmail.com con título “Consulta de Presupuesto”. </p>
-        <p>2. Agregar en el mail el documento o, por cuestiones de seguridad, la cantidad de palabras o canillas del texto, idioma de origen e idioma destino y plazo de entrega.</p>
+        <p>2. <strong>Para traducciones:</strong> agregar en el mail el documento o la cantidad de palabras o canillas del texto, idioma de origen e idioma destino y plazo de entrega.</p>
+        <p>3. <strong>Para interpretación:</strong> idiomas, fecha(s) del evento, temática y cantidad de horas.</p>
       </div>
     </div>
   </div> 
@@ -208,9 +240,9 @@
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Porfolio</h2>
-  <h4>Nuestras Traducciones</h4>
-  <p>Fragmentos/muestra de algunos de nuestros trabajos:</p><br>
+  <h2 class="headline">Nuestras Traducciones</h2>
+  <!--<h4>Nuestras Traducciones</h4>-->
+  <h4>Fragmentos/muestra de algunos de nuestros trabajos:</h4><br>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
@@ -236,84 +268,16 @@
   </div><br>
 </div>  
 
-
-<!-- Container (Pricing Section) 
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Precios</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-12">
-      <div class="card text-center">
-        <div class="card-header">
-          <h1>Basic</h1>
-        </div>
-        <div class="card-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="card-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-dark">Sign Up</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-12">
-      <div class="card text-center">
-        <div class="card-header">
-          <h1>Pro</h1>
-        </div>
-        <div class="card-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="card-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-dark">Sign Up</button>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-12">
-      <div class="card text-center">
-        <div class="card-header">
-          <h1>Premium</h1>
-        </div>
-        <div class="card-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="card-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-dark">Sign Up</button>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
--->
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid">
-  <h2 class="text-center">CONTACTO</h2>
+  <h2 class="text-center headline">CONTACTO</h2>
   <h4 class="text-center">¡Comunicate con nosotras!</h4><br>
   <div class="row">
     <div class="col-sm-5">
       <p><span class="fab fa-whatsapp"></span> +00 1515151515</p>
       <p><span class="fas fa-envelope fa-at"></span> urgas@protonmail.com</p>
       <p><span class="fas fa-map-marker-alt"></span> Chubut, Argentina</p>
-      <h3>Seguínos en nuestras redes:</h3>
+      <h2>Seguínos en nuestras redes:</h2>
       <p><span class="fab fa-facebook"></span><a target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"> FACEBOOK</a></p>
       <p><span class="fab fa-instagram"></span> <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/">INSTAGRAM</a></p>
     </div>
@@ -348,6 +312,21 @@
   </a>
   <p>Website made by F. Ciocco Aloia<br>fciocco@gmail.com</p>
 </footer>
+  <script>
+    // for burger menu transformation
+  const menuBtn = document.querySelector('.menu-btn');
+  let menuOpen = false;
+  menuBtn.addEventListener('click', () => {
+    if(!menuOpen){
+      menuBtn.classList.add('open');
+      menuOpen = true;
+    } else{
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
 <script>
 /*unfold dropdown menu when link is clicked*/
@@ -393,6 +372,87 @@ $(document).ready(function(){
   });
 })
 </script>
+<script> 
+  //return smoothly - back to top button
+$(document).ready(function() {
+$(window).scroll(function() {
+if ($(this).scrollTop() > 760) {
+$('#toTopBtn').fadeIn();
+} else {
+$('#toTopBtn').fadeOut();
+}
+});
 
+$('#toTopBtn').click(function() {
+$("html, body").animate({
+scrollTop: 0
+}, 1000);
+return false;
+});
+});
+</script>
+<script>
+// Switch light/dark 
+$(document).ready(function () {
+    //check the dark mode status
+     var darkOn = localStorage.getItem('modeOn');
+
+     if (darkOn == "true") {
+         //console.log('dark mode on');
+         $("body").addClass("dark");
+     }
+     else {
+         //console.log('dark mode off');
+         $("body").removeClass("dark");
+     }
+
+     //on click of the button with id=switch add the class we need and set the cookies
+      $("#switch").click(function () {
+        if ($("body").hasClass("dark")) {
+          $("body").removeClass("dark");
+          localStorage.setItem('modeOn', false);
+        }
+        else {
+          $("body").addClass("dark");
+          localStorage.setItem('modeOn', true);
+        }
+      });
+
+    //    $('.invert').click(function(){
+    //var $this = $(this);
+    //$this.toggleClass('invert');
+    //if($this.hasClass('invert')){
+    //  $this.text('Modo Oscuro Off');     
+    //} else {
+     // $this.text('Modo Oscuro On');
+    //}
+  //});
+ });
+</script>
+<script>
+// change dark mode button style by adding a new class to invert colors 
+$(document).ready(function () {
+    //check the dark status
+     var btndarkOn = localStorage.getItem('btnDark');
+
+     if (btndarkOn == "true") {
+         $("#switch").addClass("btn-light-inverse");
+     }
+     else {
+         $("#switch").removeClass("btn-light-inverse");
+     }
+  $('#switch').click(function(){
+    var $this = $(this);
+
+   if (!$("#switch").hasClass("btn-light-inverse")) {
+     $( "#switch" ).addClass( 'btn-light-inverse' );
+     localStorage.setItem('btnDark', true);
+   } else {
+     $( "#switch" ).toggleClass( 'btn-light-inverse' );
+     localStorage.setItem('btnDark', false);
+     }
+  });
+});
+</script>
 </body>
 </html>
