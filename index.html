@@ -10,11 +10,15 @@
   <link rel="stylesheet" href="custom.css">
   <link rel="stylesheet" href="menuBurger.css">
   <!--  Import Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,800" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700" rel="stylesheet" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,200,700,800,900' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,800,900" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400,700&display=swap" rel="stylesheet"> 
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -26,22 +30,16 @@
   <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body class="hero-anime" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <!---- TOP NAVBAR ---->
- <nav class="navbar navbar-light bg-light navbar-expand-md justify-content-start" id="nav0">
-    <!-- switch lang  -->
-  <a href="pt/index.html"><button class="btn btn-light btn-small hvr-icon-forward">ESP <span class="fa fa-chevron-circle-right hvr-icon"></span>&nbsp Português</button></a>
+<nav class="navbar navbar-light bg-light navbar-expand-md justify-content-start" id="nav0">
+  <!-- switch lang  -->
+  <a href="pt/index.html"><button class="btn btn-light btn-small hvr-icon-forward">Esp. <span class="fa fa-chevron-circle-right hvr-icon"></span>&nbsp Português</button></a>
 
-   <!-- dark mode  -->
-<span>&nbsp</span><button title="Cuida tus ojos"class="btn btn-light btn-small hvr-icon-spin" id="switch"><span class="fas fa-adjust hvr-icon"></span><span class="invert"></span></button>
- <span>&nbsp</span>
-
- <!--<button title="Cuida tus ojos"class="btn btn-light btn-small" id="switchBtn">
-  <div class="custom-control custom-control-right custom-switch">
-      <input type="checkbox" class="switch-sm custom-control-input" id="customSwitch1">
-      <label class="custom-control-label" for="customSwitch1">Modo oscuro</label>
-  </div></button>-->
-  </nav>
+  <!-- dark mode  -->
+  <span>&nbsp</span><button title="Cuida tus ojos"class="btn btn-light btn-small moon-sun" id="switch"><!--<span class="fas fa-adjust hvr-icon"></span>--><span class="invert"></span></button>
+ 
+</nav>
   
  <!-- navbar  -->
  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
@@ -54,10 +52,10 @@
   </button>-->
 
   <!-- Custom Toggler Button -->
-  <div class="menu-btn navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar"><div class="menu-btn__burger" ></div></div>
+  <div id="hamburger" class="menu-btn navbar-toggler navClick" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation"><div class="menu-btn__burger"></div></div>
   
   <!-- Navbar links -->
-  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+  <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end navClick">
     <ul class="navbar-nav">
     <!-- Dropdown -->
       <li class="nav-item stroke dropdown">
@@ -80,33 +78,57 @@
         <a class="nav-link" href="#contact">CONTACTO</a>
       </li>      
     </ul>
-    <!--<div class="social-slidebars">-->
+    <!-- Social-icons -->
+    <div id="divider"></div> 
     <ul class="navbar-nav ml-lg-2" id="nav-icons">
-      <li class="mr-1 horiz-links"><a target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"><span class="fab fa-facebook"></span></i>
-      <a class="ml-1" target="_blank" href="https://www.instagram.com/u.r.g.a.s/"><span class="fab fa-instagram"></span></a></li>
+      <li class="horiz-links"><a class="mr-1" target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"><span class="fab fa-facebook"></span></i>
+      <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/"><span class="fab fa-instagram"></span></a></li>
     </ul>
-    <!--</div>-->
+
   </div>
 </nav> 
 
-<!--<div class="jumbotron">
+<div class="jumbotron">
 <div class="container-fluid">
 <div class="row">
-    <div class="col-md-7">
-    <h3 style="color:#fff; text-transform: none;text-align: right;">Tradu.c<span style="color:#f8ae38">.toras</span></h3> 
-  <h3 id="idiomas" style="color:#f8ae38; font-size: 1.0vw; text-align: right;">~ &nbspEspañol&nbsp<br> ^&nbsp Portugués&nbsp<br>&&nbsp Inglés&nbsp</h3>
-  </div>
-  <div class="col-md-5 text-center"><img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" class="logo"></div>
--->
+  <div class="col-md-12">
+    <h3 style="color:#fff; text-transform: none;text-align: center;">Tradu.c<span id="toras" style="color:#f09d4b">.toras</span></h3> 
+  <!--<h3 id="idiomas" style="color:#f8ae38; font-size: 1.0vw; text-align: right;">~ &nbspEspañol&nbsp<br> ^&nbsp Portugués&nbsp<br>&&nbsp Inglés&nbsp</h3>
+  --><hr style="width: 200px">
+    <div class="col-md-12 text-center">
+        <h1><span>E</span><span>s</span><span>p</span><span>a</span><span>ñ</span><span>o</span><span>l</span><br>
+        <span>P</span><span>o</span><span>r</span><span>t</span><span>u</span><span>g</span><span>u</span><span>é</span><span>s</span><br>
+        <span>I</span><span>n</span><span>g</span><span>l</span><span>é</span><span>s</span></h1>
+      </div>
+      <hr id="about"style="width: 200px">
 
+        <!--<p class="text-center" id="about" style="color: #fff;">¡<b>Urgas</b> le da la bienvenida!</p> -->
+    
+  </div>
+  <!--<div class="col-md-5 text-center"><img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" class="logo"></div>-->
+   
 <!--<div class="text-center">
   <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" class="logo">	
   <h3 style="color:#fff; text-transform: none">Tradu.c<span style="color:#ca313c">.toras</span></h3> 
 </div>
   <h3 style="color:#ca313c; text-transform: none; font-size: 1.0vw;">Español<br>Portugués<br>Inglés</h3>
 </div>-->
-
 </div>
+</div>
+<!-- (About Section - inside jumbotron) -->
+<div>
+  <div class="row slideanim">
+    <div class="col-md-4 text-center my-auto">
+      <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" class="img-fluid logo"><br><br><br>
+      <!--<span class="glyphicon glyphicon-globe logo slideanim"></span>-->
+    </div>
+    <div class="col-md-8" id="presentación">
+      <h2>Somos Urgas Traductoras, ¡un gusto!</h2>
+      <h4>Realizamos traducciones y revisiones en los idiomas: <b>español, portugués e inglés</b>. Trabajamos con una diversidad de formatos textuales, como comunicados, informes, artículos, ensayos, proyectos culturales, textos periodísticos, publicaciones para redes sociales, trabajos académicos y más! Queremos traducir tus ideas, ¡comunícate con nosotras!</h4>
+      <br><a href="integrantes.html"><div id="btn-int"><button class="btn btn-light r_arrow">Integrantes</button></div></a>
+      <br>
+    </div>
+  </div>
 </div>
 </div> <!-- End Jumbo header -->
 
@@ -115,21 +137,7 @@
 <a href="#" id="toTopBtn" class="cd-top hvr-float" data-abc="true"></a>
 <!--<a class="to-top" style="display: block;"><i class="fa fa-angle-up"></i></a>-->
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-md-8">
-      <h2>Somos Urgas Traductoras, un gusto!</h2><br>
-      <h4>Realizamos traducciones y revisiones en los idiomas: <b>español, portugués e inglés</b>. Trabajamos con una diversidad de formatos textuales, como comunicados, informes, artículos, ensayos, proyectos culturales, textos periodísticos, publicaciones para redes sociales, trabajos académicos y más! Queremos traducir tus ideas, ¡comunícate con nosotras!</h4>
-      <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
-      <br><a href="integrantes.html"><div id="btn-int"><button class="btn btn-light r_arrow">Integrantes</button></div></a>
-    </div>
-    <div class="col-md-4 text-center my-auto">
-      <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" width="160" class="img-fluid slideanim">
-      <!--<span class="glyphicon glyphicon-globe logo slideanim"></span>-->
-    </div>
-  </div>
-</div>
+
 <!-- mision vision
 <div class="container-fluid bg-grey">
   <div class="row">
@@ -148,7 +156,7 @@
 </div>-->
 <!--  slider-frases  -->
 <div class="container-fluid text-center bg-grey">
-  <h2 class="headline">algún título?</h2>
+  <h2 class="headline"></h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-interval="7500">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -158,7 +166,7 @@
     </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
+      <div class="carousel-item active headline">
       	<span>[ESP]</span><h4 id="frase"> ¿Qué palabras les faltan todavía? ¿Qué necesitan decir?<br>¿Qué tiranías tragan cada día y tratan de hacer suyas, hasta asfixiarse y morir por ellas, siempre en silencio?</h4><h6>(Audre Lorde, Sister Outsider, 1984)</h6>
       </div>
       <div class="carousel-item">
@@ -224,7 +232,7 @@
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>-->
-  <div class="col-sm-12">
+  <div class="col-md-12">
     <div class="card slideanim hvr-grow">
       <div class="card-header text-center">
         <h1>Para recibir la propuesta de presupuesto, por favor:</h1>
@@ -277,7 +285,7 @@
       <p><span class="fab fa-whatsapp"></span> +00 1515151515</p>
       <p><span class="fas fa-envelope fa-at"></span> urgas@protonmail.com</p>
       <p><span class="fas fa-map-marker-alt"></span> Chubut, Argentina</p>
-      <h2>Seguínos en nuestras redes:</h2>
+      <h2 id="seguinos">Seguínos en nuestras redes:</h2>
       <p><span class="fab fa-facebook"></span><a target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"> FACEBOOK</a></p>
       <p><span class="fab fa-instagram"></span> <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/">INSTAGRAM</a></p>
     </div>
@@ -308,33 +316,63 @@
 
 <footer class="container-fluid text-center bg-grey">
   <a href="#myPage" title="hacia Arriba">
-    <span class="fas fa-angle-up hvr-wobble-vertical"></span>
+    <!--<span class="fas fa-angle-up hvr-wobble-vertical"></span>-->
   </a>
-  <p>Website made by F. Ciocco Aloia<br>fciocco@gmail.com</p>
+<div class="foot">
+  <h1 class="foot_r1">Website made</h1>
+  <h1 class="foot_r2"> by </h1>
+  <h1 class="foot_r3">Facundo Ciocco Aloia</h1> 
+  <span style="font-size: 18px;" class="fas fa-envelope fa-at"></span>
+  <h1 class="foot_r4">fciocco@gmail.com</h1>
+</div>
 </footer>
-  <script>
-    // for burger menu transformation
+
+<script> //Header Animation
+  $(document).ready(function() {
+    $('body.hero-anime').removeClass('hero-anime');
+  });
+</script>
+<script>
+
+    // burger menu transformation into 'X'
   const menuBtn = document.querySelector('.menu-btn');
-  let menuOpen = false;
+  let menuOpen = false; 
   menuBtn.addEventListener('click', () => {
     if(!menuOpen){
       menuBtn.classList.add('open');
-      menuOpen = true;
+      menuOpen = true; 
     } else{
       menuBtn.classList.remove('open');
       menuOpen = false;
     }
   });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
-<script>
-/*unfold dropdown menu when link is clicked*/
-$(function() {
- $('.navbar-collapse a').click(function(){
-  $(".navbar-collapse").collapse('hide');});
-});
-</script>
+  //unfold dropdown menu when a link is clicked
+  $(function() {
+    $('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');});
+  });
+  //burger btn's look back to normal
+  $(function() {
+    $('.navbar-collapse a').click(function(){
+    $(".menu-btn").removeClass('open');
+    menuOpen = false;
+    });
+  });
+
+    $(function() {
+    $(".navClick").click(function () { //.navClick class targets #hamburger & navbar-collapse links
+      if (menuOpen === true) {// $("#hamburger").hasClass('open')//
+        $("#divider").addClass('divider');
+        $("#divider").after('<h1 id="add" style="text-transform:uppercase; text-align:center; font-size:0.55rem!important; margin-top: 12px;">Seguínos en nuestras redes</h1>');
+      } else{ 
+        $("#divider").removeClass('divider');
+        $("#add").remove();
+        }
+      }); 
+  });
+ </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -406,7 +444,7 @@ $(document).ready(function () {
          $("body").removeClass("dark");
      }
 
-     //on click of the button with id=switch add the class we need and set the cookies
+     //on clicking the button with id=switch add the class we need and set the cookies
       $("#switch").click(function () {
         if ($("body").hasClass("dark")) {
           $("body").removeClass("dark");
@@ -418,15 +456,15 @@ $(document).ready(function () {
         }
       });
 
-    //    $('.invert').click(function(){
-    //var $this = $(this);
-    //$this.toggleClass('invert');
-    //if($this.hasClass('invert')){
-    //  $this.text('Modo Oscuro Off');     
-    //} else {
-     // $this.text('Modo Oscuro On');
-    //}
-  //});
+     //$('.invert').click(function(){
+     // var $this = $(this);
+     // $this.toggleClass('invert');
+     //   if($this.hasClass('invert')){
+     //   $this.text('Modo Claro');     
+     //   }else {
+     //   $this.text('Modo Oscuro');
+     //   }
+     //});
  });
 </script>
 <script>
@@ -436,19 +474,23 @@ $(document).ready(function () {
      var btndarkOn = localStorage.getItem('btnDark');
 
      if (btndarkOn == "true") {
-         $("#switch").addClass("btn-light-inverse");
+         $("#switch").addClass("btn-light-inverse"); 
+         $("#switch").addClass("moon-sun-inverted");
      }
      else {
          $("#switch").removeClass("btn-light-inverse");
+         $("#switch").removeClass("moon-sun-inverted");
      }
   $('#switch').click(function(){
     var $this = $(this);
 
    if (!$("#switch").hasClass("btn-light-inverse")) {
      $( "#switch" ).addClass( 'btn-light-inverse' );
+     $("#switch").addClass("moon-sun-inverted");
      localStorage.setItem('btnDark', true);
    } else {
      $( "#switch" ).toggleClass( 'btn-light-inverse' );
+     $( "#switch" ).toggleClass( 'moon-sun-inverted' );
      localStorage.setItem('btnDark', false);
      }
   });
