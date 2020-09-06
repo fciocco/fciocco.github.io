@@ -23,45 +23,51 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
  <!-- navbar  -->
- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
   <!-- Brand -->
   <a class="navbar-brand" href="index.html"><img src="imagenes/urgas-ocre.svg" alt="URGAS" style="width:55px; margin-bottom:2px;"></a>
+  
+  <!-- Toggler/collapsibe Button -->
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"></span>
+  </button>-->
 
   <!-- Custom Toggler Button -->
-  <div class="menu-btn navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar"><div class="menu-btn__burger" ></div></div>
+  <div id="hamburger" class="menu-btn navbar-toggler navClick" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation"><div class="menu-btn__burger"></div></div>
+  
   <!-- Navbar links -->
-  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+  <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end navClick">
     <ul class="navbar-nav">
     <!-- Dropdown -->
       <li class="nav-item stroke dropdown">
         <span class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">QUIENES SOMOS</span>
-        <div class="dropdown-menu">
-        	<a class="dropdown-item" href="index.html#about" id="sobrenos">Acerca de URGAS</a>
-        	<a class="dropdown-item" href="#" id="item2">Integrantes</a>
+        <div class="dropdown-menu text-center">
+        	<a class="dropdown-item" href="#about" id="sobrenos">Acerca de URGAS</a>
+        	<a class="dropdown-item" href="integrantes.html" id="item2">Integrantes</a>
         </div>
       </li>
       <li class="nav-item stroke">
-        <a class="nav-link" href="index.html#services">SERVICIOS</a>
+        <a class="nav-link" href="#services">SERVICIOS</a>
       </li>
       <li class="nav-item stroke">
-        <a class="nav-link" href="index.html#portfolio">NUESTRAS TRADUCCIONES</a>
+        <a class="nav-link" href="#portfolio">NUESTRAS TRADUCCIONES</a>
       </li>
       <!--<li class="nav-item stroke">
-        <a class="nav-link" href="index.html#pricing">PRECIOS</a>
+        <a class="nav-link" href="#pricing">PRECIOS</a>
       </li>-->
       <li class="nav-item stroke mr-2">
-        <a class="nav-link" href="index.html#contact">CONTACTO</a>
+        <a class="nav-link" href="#contact">CONTACTO</a>
       </li>      
     </ul>
-    <!--<div class="social-slidebars">-->
-    <ul class="navbar-nav ml-lg-3" id="nav-icons">
-      <li class="mr-1 horiz-links"><a target="_blank" href="https://www.facebook.com/urgas.traducciones.3/"><span class="fab fa-facebook-square"></span></i>
-      <a class="ml-1" target="_blank" href="https://www.instagram.com/u.r.g.a.s/"><span class="fab fa-instagram"></span></a></li>
+    <!-- Social-icons -->
+    <div id="divider"></div> 
+    <ul class="navbar-nav ml-lg-2" id="nav-icons">
+      <li class="horiz-links"><a class="mr-1" target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"><span class="fab fa-facebook"></span></i>
+      <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/"><span class="fab fa-instagram"></span></a></li>
     </ul>
-    <!--</div>-->
+
   </div>
 </nav> 
-
 <!--<div class="jumbotron">
 <div class="container-fluid">
  <div class="text-center">
@@ -136,30 +142,30 @@
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid">
   <h2 class="text-center headline">CONTACTO</h2>
-  <h4 class="text-center">¡Comunicate con nosotras!</h4>
+  <h4 class="text-center">¡Comunicate con nosotras!</h4><br>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-sm-5">
       <p><span class="fab fa-whatsapp"></span> +00 1515151515</p>
       <p><span class="fas fa-envelope fa-at"></span> urgas@protonmail.com</p>
-	  <p><span class="fas fa-map-marker-alt"></span> Chubut, Argentina</p>
-      <h2>Seguínos en nuestras redes:</h2>
+      <p><span class="fas fa-map-marker-alt"></span> Chubut, Argentina</p>
+      <h2 id="seguinos">Seguínos en nuestras redes:</h2>
       <p><span class="fab fa-facebook"></span><a target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"> FACEBOOK</a></p>
       <p><span class="fab fa-instagram"></span> <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/">INSTAGRAM</a></p>
     </div>
-    <div class="col-md-6 slideanim">
+    <div class="col-sm-7 slideanim">
      <!--<p>Contactanos y te responderemos tan pronto como sea posible.</p>-->
      <form action="mail_handler2.php" method="post">
       <div class="row">
-        <div class="col-md-6 form-group">
+        <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
         </div>
-        <div class="col-md-6 form-group">
+        <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
       <textarea class="form-control" id="comments" name="comments" placeholder="Tu consulta" rows="5"></textarea><br>
       <div class="row">
-        <div class="col-md-12 form-group">
+        <div class="col-sm-12 form-group">
           <button class="btn btn-dark float-right" type="submit" name="submit">Enviar</button>
         </div>
       </div>
@@ -171,12 +177,19 @@
 <!-- Image of location/map -->
 <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">-->
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="fas fa-angle-up hvr-wobble-vertical"></span>
+<footer class="container-fluid text-center bg-grey">
+  <a href="#myPage" title="hacia Arriba">
+    <!--<span class="fas fa-angle-up hvr-wobble-vertical"></span>-->
   </a>
-  <p>Website made by F. Ciocco Aloia<br>fciocco@gmail.com</p>
+<div class="foot">
+  <h1 class="foot_r1">Website made</h1>
+  <h1 class="foot_r2"> by </h1>
+  <h1 class="foot_r3">Facundo Ciocco Aloia</h1> 
+  <span style="font-size: 18px;" class="fas fa-envelope fa-at"></span>
+  <h1 class="foot_r4">fciocco@gmail.com</h1>
+</div>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script>
 
@@ -193,27 +206,46 @@
      }
 
 </script>
-  <script>
-    // for burger menu transformation
+<script>
+
+    // burger menu transformation into 'X'
   const menuBtn = document.querySelector('.menu-btn');
-  let menuOpen = false;
+  let menuOpen = false; 
   menuBtn.addEventListener('click', () => {
     if(!menuOpen){
       menuBtn.classList.add('open');
-      menuOpen = true;
+      menuOpen = true; 
     } else{
       menuBtn.classList.remove('open');
       menuOpen = false;
     }
   });
-</script>
-<script>
-/*unfold dropdown menu when link is clicked*/
-$(function() {
- $('.navbar-collapse a').click(function(){
-  $(".navbar-collapse").collapse('hide');});
-});
-</script>
+
+  //unfold dropdown menu when a link is clicked
+  $(function() {
+    $('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');});
+  });
+  //burger btn's look back to normal
+  $(function() {
+    $('.navbar-collapse a').click(function(){
+    $(".menu-btn").removeClass('open');
+    menuOpen = false;
+    });
+  });
+
+    $(function() {
+    $(".navClick").click(function () { //.navClick class targets #hamburger & navbar-collapse links
+      if (menuOpen === true) {// $("#hamburger").hasClass('open')//
+        $("#divider").addClass('divider');
+        $("#divider").after('<h1 id="add" style="text-transform:uppercase; text-align:center; font-size:0.55rem!important; margin-top: 12px;">Seguínos en nuestras redes</h1>');
+      } else{ 
+        $("#divider").removeClass('divider');
+        $("#add").remove();
+        }
+      }); 
+  });
+ </script>
 
 <script>
 $(document).ready(function(){
