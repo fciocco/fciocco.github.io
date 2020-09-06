@@ -1,615 +1,288 @@
-   /*html{scroll-behavior: smooth;}*/
-  body {
-    font: 400 15px Lato, sans-serif; /*Dosis*/
-    line-height: 1.9;
-    color: #818181;
-  }
-  body.dark{
-  color: #fdebce;
-  background-color: #5f2029;
-  }
-  body.dark #nav0, body.dark #mainNav{background-color: #5f2029!important;;}
-  body.dark h2{color: #fdebce;}
-  body.dark h3{color: #fdebce;}
-  body.dark h4{color: #fdebce;}
-  body.dark p{color: rgba(253,235,206,0.85);}
-  body.dark .bg-grey{background-color: #810920; color:#fdebce;}
-  body.dark .card{background-color: #810920; color:#fdebce;}
-  body.dark .card-header h1{color:#fdebce!important;}
-  body.dark .card-body {background-color: rgba(150, 222, 150, 0.15)!important;}
-  body.dark footer .fas{color: #fdebce;}
-  body.dark a {color: #fac36b;}
-  body.dark #item2{color:#810920!important;}
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>URGAS traducciones</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- my CSS -->
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="menuBurger.css">
+  <!--  Import Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+ <!-- navbar  -->
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><img src="imagenes/urgas-ocre.svg" alt="URGAS" style="width:55px; margin-bottom:2px;"></a>
   
-  h2 {
-    font-family: Dosis, sans-serif;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  h3 {font-family: 'Lato', sans-serif;font-size: 7.7vw; text-transform: uppercase;
-    color: #810920;font-weight: 900; margin-bottom: 18px; margin-top:6px;
+  <!-- Toggler/collapsibe Button -->
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"></span>
+  </button>-->
+
+  <!-- Custom Toggler Button -->
+  <div id="hamburger" class="menu-btn navbar-toggler navClick" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation"><div class="menu-btn__burger"></div></div>
+  
+  <!-- Navbar links -->
+  <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end navClick">
+    <ul class="navbar-nav">
+    <!-- Dropdown -->
+      <li class="nav-item stroke dropdown">
+        <span class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">QUIENES SOMOS</span>
+        <div class="dropdown-menu text-center">
+        	<a class="dropdown-item" href="#about" id="sobrenos">Acerca de URGAS</a>
+        	<a class="dropdown-item" href="integrantes.html" id="item2">Integrantes</a>
+        </div>
+      </li>
+      <li class="nav-item stroke">
+        <a class="nav-link" href="#services">SERVICIOS</a>
+      </li>
+      <li class="nav-item stroke">
+        <a class="nav-link" href="#portfolio">NUESTRAS TRADUCCIONES</a>
+      </li>
+      <!--<li class="nav-item stroke">
+        <a class="nav-link" href="#pricing">PRECIOS</a>
+      </li>-->
+      <li class="nav-item stroke mr-2">
+        <a class="nav-link" href="#contact">CONTACTO</a>
+      </li>      
+    </ul>
+    <!-- Social-icons -->
+    <div id="divider"></div> 
+    <ul class="navbar-nav ml-lg-2" id="nav-icons">
+      <li class="horiz-links"><a class="mr-1" target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"><span class="fab fa-facebook"></span></i>
+      <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/"><span class="fab fa-instagram"></span></a></li>
+    </ul>
+
+  </div>
+</nav> 
+<!--<div class="jumbotron">
+<div class="container-fluid">
+ <div class="text-center">
+  <img src="imagenes/logo-optimizado.svg" alt="LOGO-URGAS" style="width:150px; margin: 14px 0">	
+  <!--<h1 style="color:#f89f38">URGAS</h1> -->
+  <!--<h5>Tradu.c.toras</h5> 
+  <h6 style="color:#ca313c">Español - Portugués - Inglés</h6>
+ </div>
+</div>
+</div>-->
+
+<!-- backTo Top btn -->
+<a href="#" id="toTopBtn" class="cd-top hvr-float" data-abc="true"></a>
+
+<br>
+<!-- Container (Integrantes) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Integrantes del equipo de trabajo:</h2><br>
+      <h4>Nuestro equipo tiene diversas experiencias en <strong>traducción</strong>, <strong>revisión</strong> e <strong>interpretación</strong> en portugués, español e inglés, así como también en <strong>escritura</strong> de ensayos, cartas, proyectos culturales y registros metodológicos en estos 3 idiomas.</h4>
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+    </div>
+    <div class="col-md-4 text-center my-auto">
+      <br><img src="imagenes/writing.svg" alt="equipo" width="220" class="img-fluid slideanim">
+      <!--<span class="glyphicon glyphicon-globe logo slideanim"></span>-->
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Team Section) -->
+<div id="team" class="container-fluid text-center bg-grey">
+  <div class="text-center">
+    <h2 class="headline">Somos Urgas</h2>
+  </div>
+  <div class="row slideanim">
+    <div class="col-md-4 col-12">
+      <div class="card text-center hvr-float">
+        <div class="card-header">
+          <h1>Alice Nunes Fonseca</h1>
+        </div>
+        <div class="card-body">
+        <p>Magister en Artes Escénicas (2012-2015) y Licenciada en Arte Educación (2008-2012) por la Universidade Estadual Paulista - Unesp, São Paulo - Brasil. Docente y coordinadora de proyectos culturales. Traductora e intérprete desde 2014, con especial interés en contenido sobre arte e feminismos. </p>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-md-4 col-12">
+      <div class="card text-center hvr-float">
+        <div class="card-header">
+          <h1>Carolina Ciocco Aloia</h1>
+        </div>
+        <div class="card-body">
+        <p>Licenciada en Letras. Docente de lengua y literatura en la escuela secundaria desde el año 2002. Profesora particular de lengua y literatura. Asesora y correctora de textos académicos y literarios. Profesora de Español para personas extranjeras en la ciudad de Puerto Madryn.  Integrante de la colectiva Ma(g)dalenas Puerto Madryn desde 2017. Revisora de la comunicación general y contenidos en redes de Ma(g)dalenas Puerto Madryn.</p>
+        </div>
+      </div>      
+    </div>          
+    <div class="col-md-4 col-12">
+      <div class="card text-center hvr-float">
+        <div class="card-header">
+          <h1>Sarah Reimann</h1>
+        </div>
+        <div class="card-body">
+        <p>Maestra de idiomas, licenciada en teatro y traductora en los idiomas Español, Inglés y Portugués (lengua nativa). Intérprete en vivo en Encuentros Internacionales de Teatro de las Personas Oprimidas (TO) desde 2009 y traductora de materiales visuales y divulgaciones de estos eventos. Integrante de la colectiva Magdas en Acción (Buenos Aires/Argentina). Multiplicadora y feminista en TO en Brasil y otros países de Latinoamérica.</p>
+        </div>
+      </div>      
+    </div>    
+  </div>
+  <br><a href="index.html#about"><button class="btn btn-light" style="margin-top:18px; margin-bottom:-30px">Regresar a página principal</button></a><br>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid">
+  <h2 class="text-center headline">CONTACTO</h2>
+  <h4 class="text-center">¡Comunicate con nosotras!</h4><br>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="fab fa-whatsapp"></span> +00 1515151515</p>
+      <p><span class="fas fa-envelope fa-at"></span> urgas@protonmail.com</p>
+      <p><span class="fas fa-map-marker-alt"></span> Chubut, Argentina</p>
+      <h2 id="seguinos">Seguínos en nuestras redes:</h2>
+      <p><span class="fab fa-facebook"></span><a target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"> FACEBOOK</a></p>
+      <p><span class="fab fa-instagram"></span> <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/">INSTAGRAM</a></p>
+    </div>
+    <div class="col-sm-7 slideanim">
+     <!--<p>Contactanos y te responderemos tan pronto como sea posible.</p>-->
+     <form action="mail_handler2.php" method="post">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Tu consulta" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-dark float-right" type="submit" name="submit">Enviar</button>
+        </div>
+      </div>
+     </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">-->
+
+<footer class="container-fluid text-center bg-grey">
+  <a href="#myPage" title="hacia Arriba">
+    <!--<span class="fas fa-angle-up hvr-wobble-vertical"></span>-->
+  </a>
+<div class="foot">
+  <h1 class="foot_r1">Website made</h1>
+  <h1 class="foot_r2"> by </h1>
+  <h1 class="foot_r3">Facundo Ciocco Aloia</h1> 
+  <span style="font-size: 18px;" class="fas fa-envelope fa-at"></span>
+  <h1 class="foot_r4">fciocco@gmail.com</h1>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+
+    //check the dark mode status set in home page to activate it here also.
+     var darkOn = localStorage.getItem('modeOn');
+
+     if (darkOn == "true") {
+         //console.log('dark mode on');
+         $("body").addClass("dark");
+     }
+     else {
+         //console.log('dark mode off');
+         $("body").removeClass("dark");
+     }
+
+</script>
+<script>
+
+    // burger menu transformation into 'X'
+  const menuBtn = document.querySelector('.menu-btn');
+  let menuOpen = false; 
+  menuBtn.addEventListener('click', () => {
+    if(!menuOpen){
+      menuBtn.classList.add('open');
+      menuOpen = true; 
+    } else{
+      menuBtn.classList.remove('open');
+      menuOpen = false;
     }
-  h3{text-shadow: -3px 0 1px #5f2029;}
+  });
 
-  h4 {
-    font-size: 1.18rem;
-    line-height: 1.5em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  } 
-  p{font-size: 1.1rem;}
-  
-  #contact p {font-size: 1.1rem;} 
+  //unfold dropdown menu when a link is clicked
+  $(function() {
+    $('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');});
+  });
+  //burger btn's look back to normal
+  $(function() {
+    $('.navbar-collapse a').click(function(){
+    $(".menu-btn").removeClass('open');
+    menuOpen = false;
+    });
+  });
 
-  h2.headline{text-align:center; background: url(imagenes/headline.svg) 50% bottom no-repeat; padding: 10px 0 40px 0;}
+    $(function() {
+    $(".navClick").click(function () { //.navClick class targets #hamburger & navbar-collapse links
+      if (menuOpen === true) {// $("#hamburger").hasClass('open')//
+        $("#divider").addClass('divider');
+        $("#divider").after('<h1 id="add" style="text-transform:uppercase; text-align:center; font-size:0.55rem!important; margin-top: 12px;">Seguínos en nuestras redes</h1>');
+      } else{ 
+        $("#divider").removeClass('divider');
+        $("#add").remove();
+        }
+      }); 
+  });
+ </script>
 
-/* --- Booststrap toggle: place switch button/input on label's right and redifine style---*/
-  div.custom-control-right {
-    padding-right: 30px;
-    padding-left: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: -8px;
-}
-div.custom-control-right .custom-control-label::after{ /* "sphere" */
-    right: -1rem;
-    left: auto;
-    margin-top: 0.5px !important;
-}
-div.custom-control-right .custom-control-label::before {
-    right: -1.8rem;
-    left: auto;
-    margin-top: 1px !important;
-    cursor: pointer!important;
-}
-.custom-control-label::before{
-  position: absolute; 
-  height: 0.8rem!important;
-  margin-top: 0.5px!important;
-  top: 0!important; 
-  border: #adb5bd solid 1px;}
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $("footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      //Prevent default anchor click behavior
+      event.preventDefault();
 
-.custom-control-label::after {position: absolute; top: 0.125rem !important;}
+      // Store hash
+      var hash = this.hash;
 
-.custom-control-input:focus ~ .custom-control-label::before {
-    box-shadow: 0 0 0 .1rem rgba(192, 132, 144, .25)!important;
-}
-.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-    border: 1px solid #80bdff!important;
-}
-.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-    background-color: #fff;
-    -webkit-transform: translateX(.7rem);
-    transform: translateX(.7rem);
-}
-.custom-control-input:checked ~ .custom-control-label::before {
-    color: #fff;
-    border-color: #810920;
-    background-color: #810920;
-}
-.custom-switch .custom-control-label::before {
-    width: 1.52rem!important;
-}
-.custom-switch .custom-control-label::after { /*sphere's size */
-    width: calc(1rem - 6.4px)!important;
-    height: calc(1rem - 6.4px)!important;
-}
-
-/* --- back to Top btn --- */
-#toTopBtn {
-    position: fixed;
-    bottom: 26px;
-    right: 17px;
-    z-index: 98;
-    padding: 13px;
-    border-radius: 20%;
-    background-color: hsla(5, 76%, 62%, .5)
-}
-
-.cd-top {
-    position: fixed;
-    display: inline-block;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .2) !important;
-    /*background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;*/
-   background: url(imagenes/top-arrow-thin.svg) no-repeat center 50%;
- }
-#toTopBtn:hover{
-  background-color: hsla(5, 76%, 62%, .65)
-}
- /*---- End back To Top btn ------*/
-
-.btn {border-radius: 3.5rem!important;
-  text-transform: uppercase;
-  padding: 12px 25px;
-  font-size: .9rem;
-  letter-spacing: .1rem;}
-
-.btn-small {font-size: .65rem;text-transform: none;
-  padding: 6px 15px !important; 
-  border: 1.25px solid #810920!important; }
-
-.btn-dark {
-  color: #fff;
-  background-color: #810920!important;
-  border-color: #810920!important;
-}
-.btn-dark:hover {
-  color: #fff;
-  background-color: #a70c28!important;
-  border-color: #a70c28!important;
-}
-.btn-light {
-  color: #810920!important;
-  background-color: #fff8f6!important;
-  border: 2px solid #810920;
-}
-.btn-light:hover:not(#switchBtn) {
-  color: #fff8f6!important; 
-  background-color: #810920!important;
-}
-
-.btn-light-inverse{color: #fff!important;background-color: #810920!important; }
-
-.btn.btn-light.r_arrow::after{background: url(imagenes/right-arrow-thin.svg) no-repeat 100% 50%; background-size: 16px 14px;content: '';padding-right: 25px;}
-.btn.btn-light.r_arrow:hover::after{background: url(imagenes/right-arrow-thin-white.svg) no-repeat 100% 50%; background-size: 16px 14px;content: '';
-padding-right: 25px;}
-
-  .jumbotron {
-    /*background-color: #810920!important;*/ /* redish: #ca313c;*/
-    color: #fff;
-    padding: 20px 20px 20px 20px;
-    font-family: Dosis, sans-serif; /*Montserrat*/
-    border-radius: 0!important;
-    margin-bottom: 0!important;
-    width: 100%;
-    background:linear-gradient(rgba(170,10,70,.5),rgba(95,32,41,.85)), url(imagenes/fondo-jumbo-opt.svg) no-repeat center center fixed;
-    -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  footer.container-fluid {
-    padding: 40px 50px;
-  }
-  footer{margin-top: 0px;margin-bottom: 0px;border-top: 1.618px solid rgba(253,235,206,0.2);}
-  
-  footer .fas {
-  color: #810920;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  }
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
    
-  .bg-grey {background-color: #f6f6f6;}
-  .bg-ocre {background-color: #f8ae38;} /* ocre */
-  .bg-red {background-color: #ca313c;} /* redish */
-  
-  .logo{max-width:180px; margin: 14px 0;}
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  //
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
 
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .maxw {max-width: 200px;}
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 40px;
-  height: 40px;
-}
-  .carousel-control-prev-icon {
-  background-image: url(imagenes/1837450-ff5722.svg)!important;
-}
- .carousel-control-next-icon {
-   background-image: url(imagenes/1837450-ff5722.svg)!important;
-}
-  /*.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }*/
-  .carousel-indicators{
-    bottom: -38px;
-  }/*change flat default indicators*/
-  .carousel-indicators li{
-    width: 10px!important;
-    height: 10px!important;
-    border-radius: 100%;
-    background-color: #fdebce;
-    border: 1.25px solid #f8ae38;/*#ca313c;*/
-    opacity: 1;
-    transition: background-color 0.6s ease;
-  }
-  .carousel-indicators .active {
-    width: 12.5px!important;
-    height: 12.5px!important;
-    border-radius: 100%;
-    border:none;
-    margin:0 3px;
-    background-color: #f8ae38; /*ocre*/
-  }
-  #frase{font-style: italic;}
-  
-  .card{transition: box-shadow 0.1618s !important;}
-  .card:hover {box-shadow: 0px 1px 8px rgba(129,9,32, .1618);}
-
-  .card-header h1 {
-    color:#810920!important;
-    font-size: 1.5rem !important;
-    padding: 0.75rem 0.3rem;
-  }
-  .card-body{ padding: 1rem !important;}
-
-  .card-footer .btn {
-    margin: 15px 0;
-    background-color: #810920;
-    color: #fff;
-  }
-  /*.container-fluid.bg-grey{    -webkit-box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.2);
-    -moz-box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.2);
-    box-shadow: 0 10px 10px -10px rgba(215, 91, 99, 0.5);}*/
-  .navbar {
-    /*padding: 0rem 1rem;*/
-    margin-bottom: 0;
-    background-color: #810920; /*bordó*/
-    opacity: 0.96;
-    z-index: 9999;
-    border: 0;
-    font-size: 0.875rem !important;
-    line-height: 1.42 !important;
-    letter-spacing: 3px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-    box-sizing: border-box;
-    -webkit-box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.2);
-    -moz-box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.2);
-    box-shadow: 0 7px 5px -6px rgba(215, 91, 99, 0.2);
-  }
-li.nav-item{padding: 0 3px !important;text-align: center;}
-.navbar li {
-  border-right: 1 solid white;
-}
-
-.navbar-brand{font-family: Dosis, sans-serif;
-font-size: 1.3rem !important;}
-.navbar-toggler-icon:hover{ /*change hamburger color: original > stroke='rgba%280, 0, 0, 0.5%29' */
-background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(248, 174, 56, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
-}
-button.navbar-toggler:focus{outline: none!important;}
-
-/*.navbar-toggler.menu-btn {padding: 0!important;}*/
-
-#collapsibleNavbar {transition: height 0.6s ease;} /*slower unfold time, sync with burger btn animation*/
-
-#navbardrop {cursor: default;}
-
-#nav-icons a{ /*iconos redes sociales*/
-  color: rgba(255, 255, 255, 0.5);
-}
-#nav-icons a:hover {color: #fff;}
-
-.dropdown-menu {
-  margin-top: -5px;
-  letter-spacing: 1px;
-  color: #fff;
-  background-color: #f8ae38;
-  border:none;
-}
-/* desplegar menu mouse over link*/
-/*.dropdown:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown>.dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
-   /* pointer-events: none!important;
-}
-*/
-.dropdown-item {
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: #fff;
-  cursor: pointer!important;
-}
-#sobrenos { /*resaltar 1er link del menú dropdown*/
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #810920;
-}
-.dropdown-item.active, .dropdown-item:active {
-  color: #fff;
-  background-color: #fff;
-}
-.horiz-links {display: inline-flex; justify-content: center;}
-/*#contact .fas, .fab {color: rgba(248, 174, 56,0.5);}*/
-
-.slideanim {visibility:hidden;}
-.slide {
-  animation-name: slide;
-  -webkit-animation-name: slide;
-  animation-duration: 1.618s;
-  -webkit-animation-duration: 1.618s;
-  visibility: visible;
-}
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(72%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(72%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-
-  @media screen and (max-width: 700px) {
-   h3 {text-align: center!important;}
-   #idiomas{font-size: 2.5vw !important;}
-  }
-  @media screen and (max-width: 768px) {
-    .col-md-4, .col-sm-5 {margin: 25px 0;}
-    #btn-int{text-align: center!important;}
-    #btn-int>.btn-light{
-      width: 86%;
-      margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {width: 150px;}
-  }
-  @media screen and (max-width: 700px) {
-   .col {width: 100%!important;}
-  }
-  @media screen and (max-width: 480px) {
-   .card {margin: 10px -30px 0 -30px;}
-   .card-header{padding: 8px 4px;}
-   .card-header h1 {font-size: 1.4rem !important;}
-  }
- /* ---- Special hover effects ----*/
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all 0.6s;
-}
-/* stroke effect */
-/*nav.stroke ul li a,*/
-.stroke,.fill {
-  position: relative;
-}
-.stroke:after,
-.fill:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #f8ae38;
-  height: 1.1px;
-}
-.stroke:hover:after {
-  width: 100%;
-  transition: all 0.6s;
-}
-
-.fill {transition: all 2s;}
-
-.fill:after {
-  text-align: left;
-  content: '.';
-}
-.fill:hover {
-  color: #810920 !important;
-  z-index: 1;
-}
-.fill:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
-
-/* SHIFT effect*/
-.shift {
-  position:relative;
-  z-index: 1;
-}
-.shift:hover {
-  color: #91640F;
-}
-.shift:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
-  background: #f8ae38;
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-}
-.shift:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
-}
-/* Keyframes */
-@-webkit-keyframes fill {
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    background: #f8ae38;
-  }
-}
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transition-duration: 0.6s !important;
-  transition-duration: 0.6s !important;
-  -webkit-transition-property: transform;
-  transition: transform 0.6s !important;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.01);
-  transform: scale(1.01);
-}
-/* Float */
-.hvr-float {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
-  -webkit-transform: translateY(-4px);
-  transform: translateY(-4px);
-}
-/* Wobble Vertical */
-@-webkit-keyframes hvr-wobble-vertical {
-  16.65% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-  33.3% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-  49.95% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  66.6% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-@keyframes hvr-wobble-vertical {
-  16.65% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-  33.3% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-  49.95% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  66.6% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-.hvr-wobble-vertical {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
-  -webkit-animation-name: hvr-wobble-vertical;
-  animation-name: hvr-wobble-vertical;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-/* Icon Forward */
-.hvr-icon-forward {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-}
-.hvr-icon-forward .hvr-icon {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
-  -webkit-transform: translateX(7.8px);
-  transform: translateX(7.8px);
-}
-/* Icon Spin */
-.hvr-icon-spin {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-icon-spin .hvr-icon {
-  -webkit-transition-duration: 0.618s;
-  transition-duration: 0.618s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-.hvr-icon-spin:hover .hvr-icon, .hvr-icon-spin:active .hvr-icon {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+</body>
+</html>
