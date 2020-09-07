@@ -6,9 +6,6 @@
   }
   ::selection{background: #a51d2e; color:#fff;}
 
-  body {
-  cursor: url('imagenes/294182-ff5722.svg'), auto; 
-}
   body.dark{
   color: #fdebce;
   background-color: #5f2029;
@@ -132,7 +129,7 @@
 
 .btn-light-inverse{color: #fff!important;background-color: #810920!important; }
 
-.moon-sun {
+.moon-sun { /*dark mode button*/
   background: url(imagenes/moon-sun.svg) no-repeat 100% 50%;
   width:60px;
   height:29.5px;
@@ -176,7 +173,7 @@
     border-radius: 0!important;
     margin-bottom: 0!important;
     background:linear-gradient(rgba(129,9,32,0.7),rgba(95,32,41,.95)75%,rgba(95,32,41,1)), 
-    url(imagenes/fondo-jumbo-test-simpler.svg) no-repeat center center fixed;
+    url(imagenes/fondo-jumbo-simpler-recortartado-optimizado.svg) no-repeat center center fixed;
     -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
     /*background:linear-gradient(rgba(126,93,160,1),rgba(95,32,41,.95)75%,rgba(95,32,41,1)); */
   }
@@ -825,3 +822,57 @@ h1 span:nth-child(21){transition-delay: 800ms;}
 h1 span:nth-child(22){transition-delay: 1200ms;}
 h1 span:nth-child(23){transition-delay: 1450ms;}
 h1 span:nth-child(24){transition-delay: 1750ms;}
+
+/***************** CUSTOM BURGER MENU  *********************/
+.menu-btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 35.46px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 3px solid  #fff;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 0.25rem;
+}
+.menu-btn__burger{
+  width: 25px;
+  height: 2.5px;
+  background-color: rgba(255,255,255,.9);
+  border-radius: 2.5px;
+  box-shadow: 0 1px 1.5px rgba(248, 174, 56,.25);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2.5px;
+  background-color: rgba(255,255,255,.9);
+  border-radius: 2.5px;
+  box-shadow: 0 1px 1.5px rgba(248, 174, 56,.25);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before{
+  transform: translateY(-6.5px);
+}
+.menu-btn__burger::after{
+  transform: translateY(6.5px);
+}
+.menu-btn:hover{border-color: rgba(232, 138, 93, 0.9);} /*rgba(248, 174, 56, 0.9);}*
+
+/* burger ANIMATION */
+.menu-btn.open .menu-btn__burger{
+  transform: rotate(-180deg);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before{
+  transform: rotate(45deg) scale(0.75);
+}
+.menu-btn.open .menu-btn__burger::after{
+  transform: rotate(-45deg) scale(0.75);
+}
