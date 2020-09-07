@@ -36,34 +36,34 @@
   <div id="hamburger" class="menu-btn navbar-toggler navClick" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation"><div class="menu-btn__burger"></div></div>
   
   <!-- Navbar links -->
-  <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end navClick">
+  <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end">
     <ul class="navbar-nav">
     <!-- Dropdown -->
       <li class="nav-item stroke dropdown">
         <span class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">QUIENES SOMOS</span>
         <div class="dropdown-menu text-center">
-        	<a class="dropdown-item" href="#about" id="sobrenos">Acerca de URGAS</a>
-        	<a class="dropdown-item" href="integrantes.html" id="item2">Integrantes</a>
+        	<a class="dropdown-item navClick" href="#about" id="sobrenos">Acerca de URGAS</a>
+        	<a class="dropdown-item navClick" href="integrantes.html" id="item2">Integrantes</a>
         </div>
       </li>
-      <li class="nav-item stroke">
+      <li class="nav-item stroke navClick">
         <a class="nav-link" href="#services">SERVICIOS</a>
       </li>
-      <li class="nav-item stroke">
+      <li class="nav-item stroke navClick">
         <a class="nav-link" href="#portfolio">NUESTRAS TRADUCCIONES</a>
       </li>
       <!--<li class="nav-item stroke">
         <a class="nav-link" href="#pricing">PRECIOS</a>
       </li>-->
-      <li class="nav-item stroke mr-2">
+      <li class="nav-item stroke mr-2 navClick">
         <a class="nav-link" href="#contact">CONTACTO</a>
       </li>      
     </ul>
     <!-- Social-icons -->
     <div id="divider"></div> 
     <ul class="navbar-nav ml-lg-2" id="nav-icons">
-      <li class="horiz-links"><a class="mr-1" target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"><span class="fab fa-facebook"></span></i>
-      <a target="_blank" href="https://www.instagram.com/u.r.g.a.s/"><span class="fab fa-instagram"></span></a></li>
+      <li class="horiz-links"><a class="mr-2 navClick" target="_blank" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/"><span class="fab fa-facebook"></span></i>
+      <a class="navClick" target="_blank" href="https://www.instagram.com/u.r.g.a.s/"><span class="fab fa-instagram"></span></a></li>
     </ul>
 
   </div>
@@ -246,7 +246,25 @@
       }); 
   });
  </script>
+<script> 
+  //return smoothly - back to top button
+$(document).ready(function() {
+$(window).scroll(function() {
+if ($(this).scrollTop() > 760) {
+$('#toTopBtn').fadeIn();
+} else {
+$('#toTopBtn').fadeOut();
+}
+});
 
+$('#toTopBtn').click(function() {
+$("html, body").animate({
+scrollTop: 0
+}, 1000);
+return false;
+});
+});
+</script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
