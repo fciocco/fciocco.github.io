@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="custom.css">
   <link rel="stylesheet" href="menuBurger.css">
   <!--  Import Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,800" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,800" rel="stylesheet" type="text/css"> 
   <!--<link href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700" rel="stylesheet" type="text/css"> 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">-->
@@ -18,17 +18,26 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
 
   <!-- Font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">-->
 
 <!--- toggle --->
   <!--<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>-->
 </head>
 <body class="hero-anime" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- svg icon definition -->
+<svg style="display: none">
+<symbol id="circle_r-arrow" viewBox="0 0 498 496">
+  <title>circle_r-arrow</title>
+  <path class="path1" style="opacity:0.9" d="M249.5 0a248 248 0 11.1 496 248 248 0 010-496zm114 231L227.8 95.5c-9.4-9.4-24.6-9.4-42.4 8.5-17.9 17.9-17.9 33.1-8.5 42.4L278.6 248 177 349.6c-9.4 9.4-9.4 24.6 8.5 42.5 18 17.8 33.1 17.8 42.4 8.4L363.4 265a24 24 0 000-34z">
+</path>
+</symbol>
+</svg>
   <!---- TOP NAVBAR ---->
 <nav class="navbar navbar-light bg-light navbar-expand-md justify-content-start" id="nav0">
   <!-- switch lang  -->
-  <a href="pt/index.html"><button class="btn btn-light btn-small hvr-icon-forward">Esp. <span class="fa fa-chevron-circle-right hvr-icon"></span>&nbsp Português</button></a>
+  <a href="pt/index.html"><button class="btn btn-light btn-small hvr-icon-forward">Esp. <svg class="svg-icon hvr-icon">
+  <use xlink:href="#circle_r-arrow"></use></svg>&nbsp Português</button></a>
 
   <!-- dark mode  -->
   <span>&nbsp</span><button title="Cuida tus ojos"class="btn btn-light btn-small moon-sun" id="switch"><!--<span class="fas fa-adjust hvr-icon"></span>--><span class="invert"></span></button>
