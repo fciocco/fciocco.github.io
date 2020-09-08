@@ -1,8 +1,7 @@
     /*html{scroll-behavior: smooth;}*/
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-               "Helvetica Neue", sans-serif;
+               Helvetica, Arial, "Helvetica Neue", sans-serif;
     font-weight: 400;
     font-size: 15px; /*Dosis*/
     line-height: 1.9;
@@ -46,8 +45,7 @@
   }
   h2 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-               "Helvetica Neue", sans-serif;;
+               Helvetica, Arial, "Helvetica Neue", sans-serif;;
     font-size: 1.4rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -108,8 +106,7 @@
 
 .btn-small {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-               "Helvetica Neue", sans-serif;
+               Helvetica, Arial, "Helvetica Neue", sans-serif;
   font-size: .6rem;
   letter-spacing: 0.1rem;
   padding: 6px 15px !important; 
@@ -179,8 +176,7 @@
     color: #fff;
     padding: 20px 20px 20px 20px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-               "Helvetica Neue", sans-serif; /*Montserrat*/
+               Helvetica, Arial, "Helvetica Neue", sans-serif; /*Montserrat*/
     border-radius: 0!important;
     margin-bottom: 0!important;
     background:linear-gradient(rgba(129,9,32,0.7),rgba(95,32,41,.95)75%,rgba(95,32,41,1)), 
@@ -288,7 +284,8 @@
   /*#mainNav{background: linear-gradient(rgba(95,32,41,.85),rgba(170,10,70,.85));}*/
 li.nav-item{padding: 0 10px !important;text-align: center;}/*vertical separator > border-right: 1px solid rgba(255,255,255,0.15);*/
 
-.navbar-brand{font-family: Dosis, sans-serif;
+.navbar-brand{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Helvetica, Arial, "Helvetica Neue", sans-serif;
 font-size: 1.3rem !important;}
 .navbar-toggler-icon:hover{ /*change hamburger color: original > stroke='rgba%280, 0, 0, 0.5%29' */
 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(248, 174, 56, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
