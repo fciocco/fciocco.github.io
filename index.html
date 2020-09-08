@@ -11,7 +11,26 @@
   <!--  Import Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel='preload' as='style' href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">  <!--<link href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+  <!--<link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v21/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" crossorigin>-->
+<!--  <style>
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v21/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+ @font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v21/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style>-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700" rel="stylesheet" type="text/css"> 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,800,900" rel="stylesheet" type="text/css">-->
@@ -20,55 +39,43 @@
   <!-- Font awesome -->
   <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">-->
 
-<!--- toggle --->
-  <!--<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>-->
 </head>
 <body class="hero-anime" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
 <!---------------- SVG ICONS -------------------> 
 <!-- arrow icon definition -->
 <svg style="display: none">
+<defs>
 <symbol id="circle_r-arrow" viewBox="0 0 500 496">
-  <path class="path1" style="opacity:0.9" d="M249.5 0a248 248 0 11.1 496 248 248 0 010-496zm114 231L227.8 95.5c-9.4-9.4-24.6-9.4-42.4 8.5-17.9 17.9-17.9 33.1-8.5 42.4L278.6 248 177 349.6c-9.4 9.4-9.4 24.6 8.5 42.5 18 17.8 33.1 17.8 42.4 8.4L363.4 265a24 24 0 000-34z">
+  <path style="opacity:0.9" d="M249.5 0a248 248 0 11.1 496 248 248 0 010-496zm114 231L227.8 95.5c-9.4-9.4-24.6-9.4-42.4 8.5-17.9 17.9-17.9 33.1-8.5 42.4L278.6 248 177 349.6c-9.4 9.4-9.4 24.6 8.5 42.5 18 17.8 33.1 17.8 42.4 8.4L363.4 265a24 24 0 000-34z">
 </path>
 </symbol>
-</svg>
 <!-- fb icon definition -->
-<svg style="display: none">
-<symbol id="facebook-icon" viewBox="0 0 448 448">
-  <title>facebook-icon</title>
-  <path class="path1" d="M400 0H48A48 48 0 000 48v352a48 48 0 0048 48h137.25V295.69h-63V224h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61c-56.18-1.87-71.03 5.1-71.69 38.73V224h68.78l-11 71.69h-57.78V448H400a48 48 0 0048-48V48a48 48 0 00-48-48z">
+<symbol id="facebook-icon" viewBox="0 0 19 19">
+  <path class="path1" d="M18.2 0H.8a.8.8 0 00-.8.8v17.4c0 .44.35.8.8.8h9.3v-7.13H7.72V8.9h2.38V6.52c0-2.45 1.55-3.66 3.74-3.66 1.05 0 1.95.08 2.2.11v2.57c-2.54.04-2.92.04-2.98 1.4V8.9h2.97l-.6 2.97h-2.37l.05 7.12h5.1a.8.8 0 00.79-.8V.8a.8.8 0 00-.8-.79">
 </path>
 </symbol>
-</svg>
 <!-- IG icon definition -->
-<svg style="display: none">
 <symbol id="instagram-icon" viewBox="0 0 448 448">
-  <title>instagram-icon</title>
-  <path class="path1" d="M224.18 109.03c-63.6 0-114.9 51.3-114.9 114.9 0 63.6 51.3 114.9 114.9 114.9 63.6 0 114.9-51.3 114.9-114.9 0-63.6-51.3-114.9-114.9-114.9zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8a26.8 26.8 0 1126.8-26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1-26.3 26.2-34.4 58-36.2 93.9-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9 26.3 26.2 58 34.4 93.9 36.2 37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zm-47.8 224.5a75.63 75.63 0 01-42.6 42.6c-29.5 11.7-99.5 9-132.1 9-32.6 0-102.7 2.6-132.1-9a75.63 75.63 0 01-42.6-42.6c-11.7-29.5-9-99.5-9-132.1 0-32.6-2.6-102.7 9-132.1a75.63 75.63 0 0142.6-42.6c29.5-11.7 99.5-9 132.1-9 32.6 0 102.7-2.6 132.1 9a75.63 75.63 0 0142.6 42.6c11.7 29.5 9 99.5 9 132.1 0 32.6 2.7 102.7-9 132.1z">
+  <path d="M224.18 109.03c-63.6 0-114.9 51.3-114.9 114.9 0 63.6 51.3 114.9 114.9 114.9 63.6 0 114.9-51.3 114.9-114.9 0-63.6-51.3-114.9-114.9-114.9zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8a26.8 26.8 0 1126.8-26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1-26.3 26.2-34.4 58-36.2 93.9-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9 26.3 26.2 58 34.4 93.9 36.2 37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zm-47.8 224.5a75.63 75.63 0 01-42.6 42.6c-29.5 11.7-99.5 9-132.1 9-32.6 0-102.7 2.6-132.1-9a75.63 75.63 0 01-42.6-42.6c-11.7-29.5-9-99.5-9-132.1 0-32.6-2.6-102.7 9-132.1a75.63 75.63 0 0142.6-42.6c29.5-11.7 99.5-9 132.1-9 32.6 0 102.7-2.6 132.1 9a75.63 75.63 0 0142.6 42.6c11.7 29.5 9 99.5 9 132.1 0 32.6 2.7 102.7-9 132.1z">
 </path>
 </symbol>
-</svg>
 <!--  whatsapp icon definition -->
-<svg style="display: none">
 <symbol id="whatsapp-icon" viewBox="0 0 448 512">
-  <path class="path1" d="M380.9 97.1a220.3 220.3 0 00-157-65.1A222.3 222.3 0 0031.5 365L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-39-3-69.1-10-100.7-29.7l-69.8 18.3L72 359.2A184.8 184.8 0 01224 69.5c49.3 0 95.6 19.2 130.4 54.1a185.2 185.2 0 0156.1 130.5c0 101.8-84.9 184.6-186.6 184.6zm56.8-157.6c-10.6 3.3-20.3 22.2-23.6 26-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-18-9.5-8.8-.2-14.8 1.2-19.9 6.7-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1-4.1-30-8.7-5.8-37-25.7-47.6-22.4z">
+  <path d="M380.9 97.1a220.3 220.3 0 00-157-65.1A222.3 222.3 0 0031.5 365L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-39-3-69.1-10-100.7-29.7l-69.8 18.3L72 359.2A184.8 184.8 0 01224 69.5c49.3 0 95.6 19.2 130.4 54.1a185.2 185.2 0 0156.1 130.5c0 101.8-84.9 184.6-186.6 184.6zm56.8-157.6c-10.6 3.3-20.3 22.2-23.6 26-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-18-9.5-8.8-.2-14.8 1.2-19.9 6.7-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1-4.1-30-8.7-5.8-37-25.7-47.6-22.4z">
   </path>
 </symbol>
-</svg>
 <!--  Mail/envelope icon definition -->
-<svg style="display: none">
 <symbol id="mail-icon" viewBox="0 0 512.5 362.5">
-  <path class="path1" d="M501.8 105.7a6 6 0 019.7 4.7v204.2a48 48 0 01-48 48H48a48 48 0 01-48-48V110.5a6 6 0 019.7-4.7 6537 6537 0 00154 113.4c21 15.4 56.6 47.8 92 47.6 35.7.3 72-32.8 92.3-47.6 101.9-74 131.5-96.1 153.8-113.5zm-246 129c23.1.4 56.5-29.2 73.3-41.3C461.7 97.2 471.8 88.8 502.3 64.9c5.8-4.5 11.4-8.3 9.2-38C511.5.6 490 .6 463.5.6H48C21.5.5 0 .5 0 27c0 26.4 3.4 33.3 9.2 37.9 30.6 23.8 40.7 32.3 173.2 128.5 16.8 12.1 50.2 41.7 73.4 41.3z">
+  <path d="M501.8 105.7a6 6 0 019.7 4.7v204.2a48 48 0 01-48 48H48a48 48 0 01-48-48V110.5a6 6 0 019.7-4.7 6537 6537 0 00154 113.4c21 15.4 56.6 47.8 92 47.6 35.7.3 72-32.8 92.3-47.6 101.9-74 131.5-96.1 153.8-113.5zm-246 129c23.1.4 56.5-29.2 73.3-41.3C461.7 97.2 471.8 88.8 502.3 64.9c5.8-4.5 11.4-8.3 9.2-38C511.5.6 490 .6 463.5.6H48C21.5.5 0 .5 0 27c0 26.4 3.4 33.3 9.2 37.9 30.6 23.8 40.7 32.3 173.2 128.5 16.8 12.1 50.2 41.7 73.4 41.3z">
 </path>
 </symbol>
-</svg>
 <!--  location icon definition -->
-<svg style="display: none">
 <symbol id="location-icon" viewBox="0 0 362 512">
-  <path class="path1" d="M162.4 501.7C25.4 291 0 269.4 0 192 0 86 81 0 181 0s181 86 181 192c0 77.4-25.4 99-162.4 309.7a22 22 0 01-37.2 0zM181 272c41.7 0 75.4-35.8 75.4-80s-33.7-80-75.4-80-75.4 35.8-75.4 80 33.7 80 75.4 80z">
+  <path d="M162.4 501.7C25.4 291 0 269.4 0 192 0 86 81 0 181 0s181 86 181 192c0 77.4-25.4 99-162.4 309.7a22 22 0 01-37.2 0zM181 272c41.7 0 75.4-35.8 75.4-80s-33.7-80-75.4-80-75.4 35.8-75.4 80 33.7 80 75.4 80z">
   </path>
 </symbol>
+</defs>
 </svg>
 <!--------- TOP NAVBAR --------->
 <nav class="navbar navbar-light bg-light navbar-expand-md justify-content-start" id="nav0">
@@ -172,28 +179,10 @@
 </div>
 </div> <!-- End Jumbo header -->
 
-
 <!-- backTo Top btn -->
 <a href="#" id="toTopBtn" class="cd-top hvr-float" data-abc="true"></a>
 <!--<a class="to-top" style="display: block;"><i class="fa fa-angle-up"></i></a>-->
 
-
-<!-- mision vision
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4 text-center">
-      <img src="imagenes/dibujo-helecho.svg" alt="imagen" width="160" class="img-fluid maxw slide slideanim">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>-->
 <!--  slider-frases  -->
 <div class="container-fluid text-center bg-grey">
   <h2 class="headline"></h2>
@@ -216,22 +205,6 @@
         <span>[EN]</span><h4 id="frase">What are the words you do not yet have? What do you need to say?<br>What are the tyrannies you swallow day by day and attempt to make your own, until you will sicken and die of them, still in silence.</h4><h6>(Audre Lorde, Sister Outsider, 1984)</h6>
       </div>
     </div>
-
-      <!-- Left and right controls -->
-  <!--<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a> ----------------------------------------->
-    <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="fas fa-angle-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="fas fa-angle-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>-->
   </div>
 </div>
 
@@ -254,24 +227,7 @@
       <p>Presupuestos personalizados, con rápida comunicación virtual para la recepción  y envío de los trabajos.</p>
     </div>
   </div>
-  <!--<br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>-->
+
   <div class="col-md-12">
     <div class="card slideanim hvr-grow">
       <div class="card-header text-center">
@@ -372,14 +328,13 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-<script> //Header Animation
+<script> 
+//Header Animation
   $(document).ready(function() {
     $('body.hero-anime').removeClass('hero-anime');
   });
-</script>
-<script>
 
-    // burger menu transformation into 'X'
+// burger menu transformation into 'X'
   const menuBtn = document.querySelector('.menu-btn');
   let menuOpen = false; 
   menuBtn.addEventListener('click', () => {
@@ -454,8 +409,7 @@ $(document).ready(function(){
     });
   });
 })
-</script>
-<script> 
+
   //return smoothly - back to top button
 $(document).ready(function() {
 $(window).scroll(function() {
@@ -473,8 +427,7 @@ scrollTop: 0
 return false;
 });
 });
-</script>
-<script>
+
 // Switch light/dark 
 $(document).ready(function () {
     //check the dark mode status
@@ -511,8 +464,7 @@ $(document).ready(function () {
      //   }
      //});
  });
-</script>
-<script>
+
 // change dark mode button style by adding a new class to invert colors 
 $(document).ready(function () {
     //check the dark status
