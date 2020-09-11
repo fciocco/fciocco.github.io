@@ -157,7 +157,7 @@ hr.style14 {
 .btn-small {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Helvetica, Arial, "Helvetica Neue", sans-serif;
-  font-size: .6rem;
+  font-size: .65rem;
   letter-spacing: 0.1rem;
   padding: 6px 15px !important; 
   border: 1.25px solid #810920!important; 
@@ -187,7 +187,7 @@ hr.style14 {
 
 /* lang button */
 .lang a{color:#810920;}
-.btn-small.lang{padding: 6.7px 15px 6.7px 15px!important;}
+/*.btn-small.lang{padding: 6.7px 15px 6.7px 15px!important;}*/
 
 .moon-sun { /*dark mode button*/
   background: url(imagenes/moon-sun.svg) no-repeat 100% 50%;
