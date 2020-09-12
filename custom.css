@@ -28,7 +28,7 @@
   body.dark .card-body {background-color: rgba(150, 222, 150, 0.15)!important;}
   /*body.dark .card-body {background-color: #8C4D5!important;}*/
   body.dark footer .fas{color: #fdebce;}
-  body.dark a:not(.lang a){color: #fac36b;}
+  body.dark a:not(.lang){color: #fac36b;}
   body.dark #item2{color:#810920!important;}
   body.dark footer h1:not(.foot_r2){color: #fdebce;}
 
