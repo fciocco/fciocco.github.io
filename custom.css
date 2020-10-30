@@ -607,6 +607,8 @@ footer svg{color:#fdebce!important;}
 
   @media screen and (max-width: 986px) {
    h3,#about {text-align: center!important;}
+    #testimonials{margin-left: 0rem!important;margin-right:0rem!important;}
+    #testimonials>div{padding: 3rem 3rem 4rem 3rem!important}
   }
   @media screen and (max-width: 768px) {
     .col-md-4, .col-sm-5 {margin: 25px 0;}
@@ -619,8 +621,6 @@ footer svg{color:#fdebce!important;}
       font-size: .7rem !important;
     }
     #presentación,#team{text-align: center!important;}
-    #testimonials{margin-left: 0rem!important;margin-right:0rem!important;}
-    #testimonials>div{padding: 3rem 3rem 4rem 3rem!important}
   }
 
  /* ---- Special hover effects ----*/
