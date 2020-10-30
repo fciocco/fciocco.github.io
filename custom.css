@@ -1,4 +1,4 @@
-    /*html{scroll-behavior: smooth;}*/
+      /*html{scroll-behavior: smooth;}*/
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Helvetica, Arial, "Helvetica Neue", sans-serif;
@@ -169,8 +169,13 @@ filter: brightness(0.7);}
     /*background:linear-gradient(rgba(126,93,160,1),rgba(95,32,41,.95)75%,rgba(95,32,41,1)); */
   }
   @media (max-width: 480px) {
-   .jumbotron h3 {text-align: center!important;}
-   /*.jumbotron h1{font-size: 1.4rem !important;}*/
+   .jumbotron h3 {text-align: center!important;font-size: 7.5vw!important;}
+   .jumbotron h1{font-size: 1.1rem !important;}
+    p, h5 {font-size: 1.1rem;line-height: 1.4em;}
+    #myCarousel p, #Carousel p {font-size: 0.9rem!important; line-height: 1rem!important;}
+    #testimonials{margin-left: 0rem!important;margin-right:0rem!important;}
+    #testimonials>div{padding: 3rem 3rem 4rem 3rem!important}
+    .btn {font-size: .7rem!important;}
    .logo {width: 160px;}
    .card {margin: 10px -30px 0 -30px;}
    h1.card-header {font-size: 1.4rem !important;}
@@ -193,7 +198,9 @@ filter: brightness(0.7);}
   }
 }
  p {font-size: 1.1rem;}
+#testimonials{margin-left: 5rem;margin-right:5rem;}
 #testimonials p {font-size: 1.1rem;margin-bottom: 0px!important;}
+#testimonials>div{padding: 6rem;}
 p.firma{font-weight: bold; padding-top: 1rem; padding-bottom: 1.4rem;text-align: right;}
 .quote {font-size: 300%; color: #f8b525;}
 hr.headline{border: 0;width: 55%; height: 1px; text-align:center; border-radius: 50%; background-color: transparent; position: relative;bottom:5px; margin-bottom: 40px;padding-bottom: 1px;box-shadow: 0 1px 1px rgba(0,0,0,.09),0 2px 3px rgba(0,0,0,.09),0 4px 8px rgba(0,0,0,.10);}
