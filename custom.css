@@ -54,6 +54,8 @@ filter: brightness(0.7);}
 
    
   #nav0{z-index: 10000}
+#mainNav{z-index: 5000!important}
+#navTrad{z-index: 1000!important}
 
   body.dark{
   color: #fdebce;
