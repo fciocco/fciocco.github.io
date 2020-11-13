@@ -416,7 +416,7 @@ background-color:#810920!important;
   .card{transition: box-shadow 0.1618s !important;}
   .card:hover {box-shadow: 0px 1px 12px rgba(129,9,32, .1618);}
   .card-header{background-color: rgba(244,236,233,1);}/*rgba(75,15,0,0.04)!important;} */
-  #traducciones .card-header{padding-bottom: 1.5rem!important;}
+  #traducciones .card-header{background-color: #ffe2b4;padding-bottom: 1.5rem!important;}
   #accordion .card-header {background-color: rgba(17,53,76,0.1);}
   
   .referencias {font-size: 13px;line-height:0.9rem;}
