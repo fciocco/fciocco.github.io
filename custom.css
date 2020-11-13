@@ -81,7 +81,7 @@ filter: brightness(0.7);}
   body.dark #dropdown-item2{color:#810920!important;}
   body.dark footer h1:not(.foot_r2){color: #fdebce;}
   body.dark .label{color: #fdebce;}
-  body.dark .emphasis, body.dark h1#traducciones, body.dark h1.card-header-title {color:#f8b525!important;}
+  body.dark .emphasis,body.dark .emphasis2, body.dark h1#traducciones, body.dark h1.card-header-title {color:#f8b525!important;}
   
   .hide{display: none;}
 
@@ -189,6 +189,7 @@ filter: brightness(0.7);}
  #presentación{margin-top: -10px;}
  .underline{text-decoration: underline;} 
  .emphasis{color:#b91253;}
+.emphasis2{color:#810920;}
 @media (min-width: 768px) {
   #contact-form.row{
     margin-right: 40px!important;
