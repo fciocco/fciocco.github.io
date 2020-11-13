@@ -74,7 +74,7 @@ filter: brightness(0.7);}
   body.dark .bg-yellow2{background-color: #fef4dc;}  
   body.dark .card,body.dark .card-body{background-color: #842932; color:#fdebce;}
   body.dark .card-header h1{color:#fdebce!important;}
-  body.dark .card-header {background-color:#810920; }
+  body.dark .card-header, body.dark #traducciones .card-header {background-color:#810920; }
   /*body.dark .c-body {background-color: rgba(150, 222, 150, 0.15);}*/
   /*body.dark .card-body {background-color: #8C4D5!important;}*/
   body.dark #contact a{color: #fac36b;}
