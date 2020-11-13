@@ -107,34 +107,18 @@ alt = "background-urgas" class="hiddenPic">
 <!--------- TOP NAVBAR --------->
 <nav class="navbar navbar-light bg-light navbar-expand-lg justify-content-start" id="nav0">
   <!-- switch lang  -->
-  <!--<a href="pt/index.html"><button class="btn btn-light btn-small hvr-icon-forward"><b>ES</b> <svg class="svg-icon hvr-icon">
-  <use xlink:href="#circle_r-arrow"></use></svg>&nbsp Português</button></a>-->
+ 
   <button id="langBtn" class="btn btn-light btn-small lang"><a href="pt/index.html">Português</a> &nbsp|&nbsp <a href="en/index.html">English</a></button>
   <!-- dark mode  -->
   <span>&nbsp</span><button title="Cuida tus ojos"class="btn btn-light btn-small moon-sun" id="switch"><!--<span class="fas fa-adjust hvr-icon"></span>--></button>
-  <!-- switch lang  
-  <ul style="list-style: none;  padding-left: 0;  margin-bottom: 0;">
-    <li class="nav-item dropdown lang-dropdown-menu">
-      <span class="nav-link dropdown-toggle" id="navbardrop-lang" data-toggle="dropdown">ES</span>
-      <div class=" dropdown-menu text-center">
-        <a class="dropdown-item" href="pt/index.html">PT</a>
-        <a class="dropdown-item" href="pt/index.html">EN</a>
-      </div>
-    </li>
-  </ul> -->
-</nav>
+ </nav>
   
 <!------------------- MAIN navbar  ------------------>
  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
   <!-- Brand -->
   <a class="navbar-brand" href="index.html"><img src="imagenes/urgas-ocre.svg" alt="URGAS Traductoras LOGO" style="width:65px; margin-bottom:1px;"></a>
   
-  <!-- Toggler/collapsibe Button -->
-  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-  <span class="navbar-toggler-icon"></span>
-  </button>-->
-
-  <!-- Custom Toggler Button -->
+   <!-- Custom Toggler Button -->
   <div id="hamburger" class="menu-btn navbar-toggler navClick" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation"><div class="menu-btn__burger"></div></div>
   
   <!-- Navbar links -->
@@ -152,7 +136,7 @@ alt = "background-urgas" class="hiddenPic">
         <a class="nav-link" href="#services">QUÉ OFRECEMOS</a>
       </li>
       <li class="nav-item stroke navClick">
-        <a class="nav-link" href="#portfolio">NUESTRAS TRADUCCIONES</a>
+        <a class="nav-link" href="traducciones.html">NUESTRAS TRADUCCIONES</a>
       </li>
       <!--<li class="nav-item stroke">
         <a class="nav-link" href="#pricing">PRECIOS</a>
@@ -240,21 +224,7 @@ alt = "background-urgas" class="hiddenPic">
   </div>
 </div>
 
-<!--<div id="second-row" class="container-fluid">
-  <div class="row slideanim" >
-    <div class="col-md-5 text-center">
-      <br>
-      <hr style="width: 200px">
-        <h1 id="idiomas-anim"><span>E</span><span>s</span><span>p</span><span>a</span><span>ñ</span><span>o</span><span>l</span><br>
-        <span>P</span><span>o</span><span>r</span><span>t</span><span>u</span><span>g</span><span>u</span><span>é</span><span>s</span><br>
-        <span>I</span><span>n</span><span>g</span><span>l</span><span>é</span><span>s</span></h1>
-      <hr style="width: 200px;">
-      <br>
-    </div>
-  </div>
-  <div class="col-md-7  my-auto"></div>
-</div><!-- End container -->
- 
+
 
 <!-- backTo Top btn -->
 <a href="#myPage" id="toTopBtn" title="hacia arriba" class="hvr-float" data-abc="true" aria-label="toTop" role="button"><svg class="svg-icon hvr-icon" fill="#5f2029"><use xlink:href="#topArrow-icon"></use></svg></a>
@@ -300,10 +270,8 @@ alt = "background-urgas" class="hiddenPic">
 <div id="accordion">
   <div class="card">
     <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Traducción:
-        </a>
+      <h5 id="a" class="mb-0">
+        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Traducción:</a>
       </h5>
     </div>
 
@@ -316,9 +284,7 @@ alt = "background-urgas" class="hiddenPic">
   <div class="card">
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
-        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Interpretación:
-        </a>
+        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Interpretación:</a>
       </h5>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -330,9 +296,7 @@ alt = "background-urgas" class="hiddenPic">
   <div class="card">
     <div class="card-header" id="headingThree">
       <h5 class="mb-0">
-        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Conversación:
-        </a>
+        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Conversación:</a>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
@@ -498,11 +462,14 @@ alt = "background-urgas" class="hiddenPic">
 </div>
 </footer>
 
+
+
+
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="ztext.min.js"></script>
+
 <script> 
 //Header Animation
   $(document).ready(function() {
