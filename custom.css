@@ -1,4 +1,4 @@
-      /*html{scroll-behavior: smooth;}*/
+     /*html{scroll-behavior: smooth;}*/
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Helvetica, Arial, "Helvetica Neue", sans-serif;
@@ -56,7 +56,6 @@ filter: brightness(0.7);}
   #nav0{z-index: 10000}
 #mainNav{z-index: 5000!important}
 #navTrad{z-index: 1000!important}
-
   body.dark{
   color: #fdebce;
   background-color: #5f2029;
@@ -189,7 +188,12 @@ filter: brightness(0.7);}
  #presentación{margin-top: -10px;}
  .underline{text-decoration: underline;} 
  .emphasis{color:#b91253;}
-.emphasis2{color:#810920;}
+ .emphasis2{color:#810920;}
+ .left-centered {
+  text-align: left; 
+  margin: auto; 
+  width: 500px;
+}
 @media (min-width: 768px) {
   #contact-form.row{
     margin-right: 40px!important;
@@ -417,7 +421,8 @@ background-color:#810920!important;
   .card{transition: box-shadow 0.1618s !important;}
   .card:hover {box-shadow: 0px 1px 12px rgba(129,9,32, .1618);}
   .card-header{background-color: rgba(244,236,233,1);}/*rgba(75,15,0,0.04)!important;} */
-  #traducciones .card-header{background-color: #ffe2b4;padding-bottom: 1.5rem!important;}
+
+  #traducciones .card-header{background-color: #ffe2b4; padding-bottom: 1.5rem!important;}
   #accordion .card-header {background-color: rgba(17,53,76,0.1);}
   
   .referencias {font-size: 13px;line-height:0.9rem;}
@@ -644,16 +649,17 @@ footer svg{color:#fdebce!important;}
     }
   }
 
-  @media screen and (max-width: 986px) {
-   h3,#about {text-align: center!important;}
+  @media screen and (max-width: 992px) {
+   h3,#about, #about-title {text-align: center!important;}
    #testimonials{margin-left: 0rem!important;margin-right:0rem!important;}
    #testimonials>div{padding: 3rem 3rem 4rem 3rem!important}
   }
   @media screen and (max-width: 768px) {
     .col-md-4, .col-sm-5 {margin: 25px 0;}
     .btn-dark.btn-submit{width: 100%;} 
-    #btn-team{text-align: center!important;}
-    #btn-team.btn-light{width: 90%;}
+
+    #btn-team.btn-light{text-align:center;width: 80%;}
+
     #btn-backToMainPage.btn-light{
           width: 100%;
       padding: 10px 6px !important; 
