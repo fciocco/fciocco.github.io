@@ -129,7 +129,7 @@ alt = "background-urgas" class="hiddenPic">
         <span class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">QUIENES SOMOS</span>
         <div class="dropdown-menu text-center">
         	<a class="dropdown-item navClick" href="#about" id="sobrenos"><strong>Somos URGAS Traductoras</strong></a>
-        	<a class="dropdown-item navClick toTeam" href="integrantes.html" id="dropdown-item2">Integrantes del equipo</a>
+        	<a class="dropdown-item navClick autoSlide" href="integrantes.html" id="dropdown-item2">Integrantes del equipo</a>
         </div>
       </li>
       <li class="nav-item stroke navClick">
@@ -161,10 +161,18 @@ alt = "background-urgas" class="hiddenPic">
   <div class="col-md-12">
     <h3 style="color:#fff; text-transform: none;text-align: center;">Proceso de traducción minucioso y de calidad</h3>
     <div class="col-md-12 text-center" id="idiomas">
-      <hr style="width: 260px">
-        <h1><span>E</span><span>s</span><span>p</span><span>a</span><span>ñ</span><span>o</span><span>l</span>.<span>P</span><span>o</span><span>r</span><span>t</span><span>u</span><span>g</span><span>u</span><span>é</span><span>s</span>.<span>I</span><span>n</span><span>g</span><span>l</span><span>é</span><span>s</span></h1>
-    <hr style="width: 260px;">
+      	<h1><span>E</span><span>s</span><span>p</span><span>a</span><span>ñ</span><span>o</span><span>l</span><span>.</span><span>P</span><span>o</span><span>r</span><span>t</span><span>u</span><span>g</span><span>u</span><span>é</span><span>s</span><span>.</span><span>I</span><span>n</span><span>g</span><span>l</span><span>é</span><span>s</span></h1>
+    	<br>
     </div>
+	<!-- para celu muy angostos! idiomas apilados -->
+    <div class="col-md-12 text-center" id="idiomas2">
+      	<hr style="width: 100%">
+        <h1><span>E</span><span>s</span><span>p</span><span>a</span><span>ñ</span><span>o</span><span>l</span><br>
+        <span>P</span><span>o</span><span>r</span><span>t</span><span>u</span><span>g</span><span>u</span><span>é</span><span>s</span><br>
+        <span>I</span><span>n</span><span>g</span><span>l</span><span>é</span><span>s</span></h1>
+    	<hr style="width: 100%;">
+    </div>
+
   </div>
 </div>
 
@@ -198,7 +206,7 @@ alt = "background-urgas" class="hiddenPic">
         </div>
 	    <h5>Traducimos, revisamos y dialogamos con tu proyecto textual con el esmero que este merece ¡y con tres miradas muy especiales! Somos estudiosas, curiosas y minuciosas en nuestro hacer: ¡Somos Urgas! Nuestro bagaje de conocimiento proviene de nuestros estudios sobre artes, literatura, feminismos, filosofía, poesía, sociología y comunicación. Articulamos de forma cotidiana con estas temáticas, brindando a nuestro trabajo de traducción compromiso social, diálogo cuidadoso y seguridad digital en nuestras comunicaciones. </h5>	
 	 </div><br>
- 	   <!--<br><a href="#contact"><button class="btn btn-dark ">Comunícate con nosotras</button></a> &nbsp--><a href="integrantes.html"><button id="btn-team" class="btn btn-light toTeam">Conócenos <svg class="svg-icon rightArrow hvr-icon"><use xlink:href="#topArrow-icon"></use></svg></button></a>
+ 	   <!--<br><a href="#contact"><button class="btn btn-dark ">Comunícate con nosotras</button></a> &nbsp--><a href="integrantes.html"><button id="btn-team" class="btn btn-light autoSlide">Conócenos <svg class="svg-icon rightArrow hvr-icon"><use xlink:href="#topArrow-icon"></use></svg></button></a>
     </div>
   </div>
 </div>
@@ -235,11 +243,13 @@ alt = "background-urgas" class="hiddenPic">
 
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center bg-beige" >
+<div id="services" style="visibility: hidden">anchor</div>
+
+<div class="container-fluid text-center bg-beige" >
   <h2>Qué ofrecemos</h2>
   <hr class="headline">
   <br>
-  <div class="row slideanim">
+  <div class="row slideanim" id="queOfrecemos">
   	<div id="serv-col-1" class="col-xs-12 col-lg-12 px-md-5">
   	<h5>Realizamos traducciones y revisiones en los idiomas <strong>español</strong>, <strong>portugués</strong> e <strong>inglés</strong>. Trabajamos con una diversidad de formatos textuales, como comunicados, informes, artículos, ensayos, textos literarios, artísticos, filosóficos, textos periodísticos, estudios de género, proyectos culturales, publicaciones para redes sociales, páginas web, trabajos académicos ¡y más! Queremos traducir tus ideas, ¡comunícate con nosotras!</h5>
   </div>
@@ -280,7 +290,7 @@ alt = "background-urgas" class="hiddenPic">
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-        Título: “Consulta de Presupuesto”; agregar el documento o la cantidad de palabras o carillas del texto, idioma de origen, idioma de destino y plazo de entrega. <b>Ofrecemos presupuestos personalizados y rápida comunicación virtual en la recepción y envío de los trabajos.</b>
+        Título: Presupuesto Traducción”; agregar el documento o la cantidad de palabras o carillas del texto, idioma de origen, idioma de destino y plazo de entrega. <b>Ofrecemos presupuestos personalizados y rápida comunicación virtual en la recepción y envío de los trabajos.</b>
       </div>
     </div>
   </div>
@@ -304,7 +314,7 @@ alt = "background-urgas" class="hiddenPic">
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
       <div class="card-body">
-      	Título: “Conversación”; comunícanos qué idioma deseas aprender (español, portugués, inglés), tus temáticas/áreas principales de interés y te enviaremos nuestras propuestas!
+      	Título: “Conversación”; comunícanos qué idioma deseas aprender (español, portugués, inglés), tus temáticas/áreas principales de interés ¡y te enviaremos nuestras propuestas!
       </div>
     </div>
   </div>
@@ -319,7 +329,7 @@ alt = "background-urgas" class="hiddenPic">
   <h2 style="color:#fff">Nuestras Traducciones</h2>
   <hr class="headline">
   <h5 style="color:#fff">Aquí podrás conocer algunos de nuestros trabajos:</h5><br>
-	<a href="traducciones.html"><button class="btn btn-dark toTeam">Traducciones <svg class="svg-icon rightArrow hvr-icon"><use xlink:href="#topArrow-icon"></use></svg></button></a>
+	<a href="traducciones.html"><button class="btn btn-dark autoSlide">Traducciones <svg class="svg-icon rightArrow hvr-icon"><use xlink:href="#topArrow-icon"></use></svg></button></a>
   </div><br>
 </div>  
 
@@ -348,11 +358,19 @@ alt = "background-urgas" class="hiddenPic">
   <div class="carousel-inner">
     <div class="carousel-item active">
        	<p class="text-justify">El trabajo con Urgas Tradu.c.toras nos ha permitido lograr diálogos enriquecedores con defensoras y activistas de lengua portuguesa que viven en la región, pues su trabajo demuestra un compromiso ético. Algo que hemos encontrado muy satisfactorio es su atención a conocer nuestro lenguaje como Fondo de Acción Urgente que apoya la sostenibilidad de los movimientos de mujeres, feministas y trans feministas en América Latina. Agradecemos su responsabilidad y traducción poniendo el cuidado en el centro y reconociendo todas las identidades.</p>
-  	  	<p class="firma"><em>Fondo de Acción Urgente</em></p>
-      </div>
-    
+    	<br>
+	  	<div class="row text-center">
+	   	 	<div class="col-4"></div>
+			<div class="col-4"></div>
+	    	<div class="col-xs-4 col-lg-4">
+	    		<img class="FAU" src="imagenes/FAU-small.png" alt="logo-Fondo-Acción-Urgente">
+	  	  		<p class="firmaFAU"><em>Fondo de Acción Urgente</em></p>
+	    	</div>
+	    </div>
+	</div>
+  
     <div class="carousel-item">
-       	<p class="text-justify">Las integrantes de Urgas Tradu.c.toras realizaron numerosas traducciones de textos para la Red Magdalena Internacional y fueron intérpretes en distintos eventos multilingüísticos, en obras de teatro foro, presentaciones teatrales y talleres artísticos. Nuestro último trabajo juntas fue la traducción del artículo Diez años de revolución en la revolución de Mariana Villani, para mi libro “Teatro de las Oprimidas - Estéticas Feministas para Poéticas Políticas” (2019), disponible en 2020 en su edición en español. Trabajar con Urgas es tener la certeza de que cada expresión de nuestro lenguaje estético-político será cuidadosamente traducida con la misma intención que fue pensada y escrita: ¡provocar en quien lee el deseo de accionar para transformar! Responsabilidad con los plazos, atención a los detalles de forma y contenido, creatividad y articulación con las temáticas propuestas, hacen de Urgas un colectivo muy especial para confiar nuestras palabras!</p>
+       	<p class="text-justify">Las integrantes de Urgas Tradu.c.toras realizaron numerosas traducciones de textos para la Red Magdalena Internacional y fueron intérpretes en distintos eventos multilingüísticos, en obras de teatro foro, presentaciones teatrales y talleres artísticos. Nuestro último trabajo juntas fue la traducción del artículo "Diez años de revolución en la revolución" de Mariana Villani, para mi libro “Teatro de las Oprimidas - Estéticas Feministas para Poéticas Políticas” (2019), disponible en 2020 en su edición en español. Trabajar con Urgas es tener la certeza de que cada expresión de nuestro lenguaje estético-político será cuidadosamente traducida con la misma intención que fue pensada y escrita: ¡provocar en quien lee el deseo de accionar para transformar! Responsabilidad con los plazos, atención a los detalles de forma y contenido, creatividad y articulación con las temáticas propuestas, hacen de Urgas un colectivo muy especial para confiar nuestras palabras!</p>
   	  	<p class="firma"><em>Bárbara Santos</em></p>
     </div>
 
@@ -379,7 +397,8 @@ alt = "background-urgas" class="hiddenPic">
  
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid text-center">
+<div id="contact" style="visibility: hidden">anchor</div>
+<div class="container-fluid text-center">
   <h2>Contacto y Ubicación</h2>
   <hr class="headline">
   <h5>Queremos conocer qué te urge traducir.</h5>
@@ -560,18 +579,19 @@ $(document).ready(function(){
     });
   });
 });
-// auto-activate slide movement on quienes somos id=about section, when returning from integrantes.html page
+// auto-activate slide movement on specified sections when returning from integrantes.html page
   
-  var teamOn = sessionStorage.getItem('clickTeam');
-    sessionStorage.setItem('clickTeam', false);
+  var sectionOn = sessionStorage.getItem('linkIsClicked');
+    sessionStorage.setItem('linkIsClicked', false);
 
-    if (teamOn === "true") {
-         $("#presentacion").addClass("slide"); 
+    if (sectionOn === "true") {
+         $("#presentacion,#queOfrecemos").addClass("slide"); 
      }
-     else {$("#presentacion").removeClass("slide");}
+     else {$("#presentacion,#queOfrecemos").removeClass("slide");
+ 	}
     
-    $('.toTeam').click(function(){ 
-     sessionStorage.setItem('clickTeam', true);
+    $('.autoSlide').click(function(){ 
+     sessionStorage.setItem('linkIsClicked', true);
     });
 
 // back to top button
