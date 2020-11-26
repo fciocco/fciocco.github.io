@@ -80,12 +80,12 @@
       <li class="nav-item stroke dropdown">
         <span class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">QUIENES SOMOS</span>
         <div class="dropdown-menu text-center">
-        	<a class="dropdown-item navClick" href="index.html#about" id="sobrenos"><strong>Somos URGAS Traductoras</strong></a>
+        	<a class="dropdown-item navClick autoSlide" href="index.html#about" id="sobrenos"><strong>Somos URGAS Traductoras</strong></a>
         	<a class="dropdown-item navClick" href="#team-members" id="dropdown-item2">Integrantes del equipo</a>
         </div>
       </li>
       <li class="nav-item stroke navClick">
-        <a class="nav-link" href="index.html#services">QUÉ OFRECEMOS</a>
+        <a class="nav-link autoSlide" href="index.html#services">QUÉ OFRECEMOS</a>
       </li>
       <li class="nav-item stroke navClick">
         <a class="nav-link" href="traducciones.html">NUESTRAS TRADUCCIONES</a>
@@ -127,7 +127,7 @@
     <div class="col-md-8">
       <h2 class="emphasis">Integrantes del equipo de trabajo:</h2><br>
       <h5>Nuestro equipo tiene diversas experiencias en <strong class="emphasis">traducción</strong>, <strong class="emphasis">revisión</strong> e <strong class="emphasis">interpretación</strong> en portugués, español e inglés, así como también en <strong class="emphasis">escritura</strong> de ensayos, cartas, proyectos culturales y registros metodológicos en estos 3 idiomas.</h5>
-      <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+  
     </div>
     <div class="col-md-4 text-center my-auto">
       <br><img src="imagenes/writing.svg" alt="equipo" width="220" class="img-fluid">
@@ -178,15 +178,18 @@
       </div> 
     </div>    
   </div>
-  <br><a href="index.html#about"><button id="btn-backToMainPage" class="btn btn-light"><svg class="svg-icon leftArrow hvr-icon"><use xlink:href="#topArrow-icon"></use></svg> &nbspRegresar a página principal</button></a><br>
+  <!--<br><a href="index.html#about"><button id="btn-backToMainPage" class="btn btn-light autoSlide"><svg class="svg-icon leftArrow hvr-icon"><use xlink:href="#topArrow-icon"></use></svg> &nbspRegresar a página principal</button></a><br>-->
+  <br><a href="index.html#services"><button id="btn-backToMainPage" class="btn btn-light autoSlide">Qué ofrecemos</button></a><br>
+
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid text-center">
+<div id="contact" style="visibility: hidden">anchor</div>
+<div class="container-fluid text-center">
   <h2>Contacto y Ubicación</h2>
   <hr class="headline">
-  <h5>Queremos conocer qué te urge traducir.</h5>
-  <h4>¡Hablemos!</h4><br>
+  <h5>Si deseas para tus textos un proceso de traducción y revisión cuidadoso y de calidad ¡comunícate con nosotras! </h5>
+  <h4>¡Queremos traducir tus ideas!</h4><br>
   <div id="contact-data" class="row slideanim text-center">
     <!--<div class="col-md-4">
       <svg class="svg-icon x4"><use xlink:href="#whatsapp-icon"></use></svg>
@@ -321,6 +324,17 @@
     menuOpen = false;
     });
   });
+    // auto-activate slide movement on specified sections when go back to main page from others pages
+
+   var sectionOn = sessionStorage.getItem('linkIsClicked');
+    sessionStorage.setItem('linkIsClicked', false);
+
+    if (sectionOn === "true") {
+         $("#presentacion,#queOfrecemos").addClass("slide"); 
+     }
+     else {$("#presentacion,#queOfrecemos").removeClass("slide");
+    }
+    
 
     $(function() {
     $(".navClick").click(function () { //.navClick class targets #hamburger & navbar-collapse links
