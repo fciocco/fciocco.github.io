@@ -119,10 +119,15 @@ filter: brightness(0.7);}
   .px-x5{padding-right: 20rem!important;padding-left: 20rem!important;}
   h1{ /*animated font used in jumbotron header*/
     font-family: 'Playfair Display', Times New Roman, serif; font-weight: 400; font-style: italic; 
-    font-size: 1.4rem; color: #f8b525; 
+    font-size: 1.3rem; color: #f8b525; 
     /*text-shadow: 0 1px 1px #5f2029;*/
     }
-
+  @media (max-width: 768px) {
+  .hrWidth {width: 98%;}
+  }
+  @media (min-width: 769px) {
+  .hrWidth {width: 40%;}
+  }
   h2 {
     font-family: 'Playfair Display', Times New Roman, serif;
     font-size: 1.8rem;
@@ -177,14 +182,22 @@ filter: brightness(0.7);}
    .jumbotron h1{font-size: 1.1rem !important;}
     #accordion .card-header a {font-size: 0.9rem!important;}
     p, h5 {font-size: 1.1rem;line-height: 1.4em;}
-    #myCarousel p, #Carousel p {font-size: 0.9rem!important; line-height: 1rem!important;}
+    #myCarousel p, #Carousel p {font-size: 0.9rem!important; line-height: 1.3rem!important;}
     .btn {font-size: .7rem!important;}
    .logo {width: 160px;}
    .card {margin: 10px -30px 0 -30px;}
    h1.card-header {font-size: 1.4rem !important;}
+   .FAU {width: 55px;}
   }
   
  #idiomas{padding-top: 10px;}
+ @media (max-width: 370px) {
+  #idiomas {display: none;}
+  #idiomas2 {display: block!important;}
+ }
+  @media (min-width: 371px) {
+   #idiomas2 {display: none;}
+ }
  #presentación{margin-top: -10px;}
  .underline{text-decoration: underline;} 
  .emphasis{color:#b91253;}
@@ -209,6 +222,7 @@ filter: brightness(0.7);}
 
 p {font-size: 1.1rem;}
 p.firma{font-weight: bold; padding-top: 1rem; padding-bottom: 1.4rem;text-align: right;}
+p.firmaFAU{font-weight: bold; padding-top: 1rem; padding-bottom: 1.4rem;text-align: center;}
 .quote {font-size: 300%; color: #f8b525;}
 
 #testimonials{margin-left: 5rem;margin-right:5rem;}
@@ -425,7 +439,7 @@ background-color:#810920!important;
   #traducciones .card-header{background-color: #ffe2b4; padding-bottom: 1.5rem!important;}
   #accordion .card-header {background-color: rgba(17,53,76,0.1);}
   
-  .referencias {font-size: 13px;line-height:0.9rem;}
+  .referencias {font-size: 13px;line-height:1.4rem; float:left;}
   
   h1.card-header  {
     color:#810920!important;
@@ -442,6 +456,7 @@ background-color:#810920!important;
     color:#810920;
     font-size: 1.1rem;
     letter-spacing: 1px;
+    line-height: 1.9rem;
   }
   .card-body.consulta { margin-top: 10px; padding-left: 2rem;padding-right: 2rem;}
 
@@ -650,9 +665,10 @@ footer svg{color:#fdebce!important;}
   }
 
   @media screen and (max-width: 992px) {
-   h3,#about, #about-title {text-align: center!important;}
+   h3,#about, #about-title,#original2b,#traducido2b,#original3b,#traducido3b {text-align: center!important;}
    #testimonials{margin-left: 0rem!important;margin-right:0rem!important;}
-   #testimonials>div{padding: 3rem 3rem 4rem 3rem!important}
+   #testimonials>div{padding: 3rem 3rem 4rem 3rem!important;}
+   
   }
   @media screen and (max-width: 768px) {
     .col-md-4, .col-sm-5 {margin: 25px 0;}
@@ -922,17 +938,6 @@ body.hero-anime .jumbotron hr{ /*posición inicial oculta*/
   transition-delay: 100ms;
 }
 
-/*.about-block {
-  opacity: 1;
-  transform: translate(0);
-  transition: all 850ms ease-out;
-  transition-delay: 1600ms;
-}
-body.hero-anime .about-block{
-  opacity: 0;
-  transform: translateY(50px);
-  transition-delay: 1600ms;
-}*/
 h1 span{ /*posición final*/
   display: inline-block;
   transition: all 400ms;
@@ -971,6 +976,10 @@ body.hero-anime h1 span:nth-child(6){
 body.hero-anime h1 span:nth-child(7){
   opacity: 0;
   transform: translateY(-70px);
+}/* punto */
+body.hero-anime h1 span:nth-child(8){
+  opacity: 0;
+  transform: translateY(-100px);
 }
 h1 span:nth-child(1){transition-delay: 1000ms;}
 h1 span:nth-child(2){transition-delay: 700ms;}
@@ -979,6 +988,7 @@ h1 span:nth-child(4){transition-delay: 800ms;}
 h1 span:nth-child(5){transition-delay: 1000ms;}
 h1 span:nth-child(6){transition-delay: 700ms;}
 h1 span:nth-child(7){transition-delay: 900ms;}
+h1 span:nth-child(8){transition-delay: 900ms;}
 /* Inicio palabra Portugués*/
 body.hero-anime h1 span:nth-child(9){ /*P*/
   opacity: 0;
@@ -1016,6 +1026,10 @@ body.hero-anime h1 span:nth-child(17){ /*S final*/
   opacity: 0;
   transform: translateY(50px);
 }
+body.hero-anime h1 span:nth-child(18){ /*punto*/
+  opacity: 0;
+  transform: translateY(90px);
+}
 h1 span:nth-child(9){transition-delay: 600ms;}
 h1 span:nth-child(10){transition-delay: 700ms;}
 h1 span:nth-child(11){transition-delay: 1300ms;}
@@ -1025,6 +1039,7 @@ h1 span:nth-child(14){transition-delay: 1200ms;}
 h1 span:nth-child(15){transition-delay: 1450ms;}
 h1 span:nth-child(16){transition-delay: 1100ms;}
 h1 span:nth-child(17){transition-delay: 800ms;}
+h1 span:nth-child(18){transition-delay: 700ms;}
 /* inicio palabra inglés*/
 /*valores iniciales (ocultos)*/
 body.hero-anime h1 span:nth-child(19){
