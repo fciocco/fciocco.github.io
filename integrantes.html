@@ -115,7 +115,7 @@
   </div>
   <div class="row slideanim">
     <div class="col-xs-4 col-lg-4 d-flex">
-      <div class="card text-center mb-4 hvr-float">
+      <div class="card text-center mb-4 hvr-float-and-rotate">
         <div class="card-header">
           <img src="img/alice.jpg" alt="alice-exterior-sonriente" class="text-center card-img img-circle-team">
           <h1 class="card-header-title">Alice Fonseca Nunes</h1>
@@ -126,7 +126,7 @@
       </div> 
     </div>     
     <div class="col-xs-4 col-lg-4 d-flex">
-      <div class="card text-center mb-4 hvr-float">
+      <div class="card text-center mb-4 hvr-float-and-rotate">
         <div class="card-header">
         <img src="img/caro.jpg" alt="carolina-trabajando" class="text-center card-img img-circle-team">
           <h1 class="card-header-title">Carolina Ciocco Aloia</h1>
@@ -137,7 +137,7 @@
       </div>  
     </div>          
     <div class="col-xs-4 col-lg-4 d-flex">
-      <div class="card text-center mb-4 hvr-float">
+      <div class="card text-center mb-4 hvr-float-and-rotate">
         <div class="card-header">
           <img src="img/sarah.jpg" alt="sarah-interior-trabajando" class="text-center card-img img-circle-team">
           <h1 class="card-header-title">Sarah Reimann</h1>
@@ -149,7 +149,7 @@
       </div> 
     </div>    
   </div>
-  <br><a href="index.html#services"><button id="btn-backToMainPage" class="btn btn-light autoSlide">Qué ofrecemos</button></a><br>
+  <a href="index.html#services"><button id="btn-backToMainPage" class="btn btn-light autoSlide">Qué ofrecemos</button></a><br>
 </div>
 
 <!-- Container (Contact) -->
@@ -157,9 +157,9 @@
 <div class="container-fluid text-center">
   <h2>Contacto y Ubicación</h2>
   <hr class="headline">
-  <h5>Si deseas para tus textos un proceso de traducción y revisión cuidadoso y de calidad ¡comunícate con nosotras! </h5>
+  <h5 class="px-md-5 mx-md-5">Si deseas para tus textos un proceso de traducción y revisión cuidadoso y de calidad ¡comunícate con nosotras! </h5>
   <h4>¡Queremos traducir tus ideas!</h4><br>
-  <div id="contact-data" class="row slideanim text-center">
+  <div id="contact-data" class="row slideanim text-center px-md-5 mx-md-5">
      <div class="col-md-6">
       <svg class="svg-icon x4" style="color:#f8b525"><use xlink:href="#mail-icon"></use></svg>
       <h4>urgas@protonmail.com</h4>
@@ -173,26 +173,27 @@
 </div>
 
 <!-- form container -->
-<div class="container-fluid  bg-beige">
+<div class="container-fluid bg-beige">
   <div id="contact-form" class="row slideanim">
     <div class="col-md-12">
      <h4 class="text-center">¿Dudas? También puedes contactarnos por acá :)</h4><br>
-     <form action="mail_handler2.php" method="post">
+     <iframe name="formDestination" class="hide"></iframe>
+     <form class="px-md-5 mx-md-5" action="mail_handler2.php" method="post" target="formDestination" onsubmit="return success()">
       <div class="row">
         <div class="col-sm-6 form-group">
           <label for="name"><h1 class="label">Nombre</h1></label>
-          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+          <input class="form-control" id="name" name="name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
           <label for="email"><h1 class="label">Email</h1></label>
-          <input class="form-control" id="email" name="email" placeholder="Tu Email" type="email" required>
+          <input class="form-control" id="email" name="email" type="email" required>
         </div>
       </div>
       <label for="comments" class="text-left"><h1 class="label">Mensaje</h1></label>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Tu consulta." rows="5"></textarea><br>
+      <textarea class="form-control" id="comments" name="comments" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group text-center">
-          <button class="btn btn-dark btn-submit" type="submit" name="submit">Enviar</button>
+          <button id="submitBtn" class="btn btn-dark btn-submit" type="submit" name="submit">Enviar</button>
         </div>
       </div>
      </form>
@@ -202,8 +203,7 @@
 <!-- SOCIAL ICONS -->
 <div id="social-icons-row" class="container-fluid text-center bg-yellow2">
 <div class="row">
-<div class="col-4"></div>
-<div class="col-xs-4 col-lg-4">
+<div class="col-xs-12 col-lg-12">
   <svg id="svg-view" viewBox="0 0 100 100" class="mr-2">
     <a target="_blank" rel="noopener" href="https://www.facebook.com/Urgas-Traductoras-102571991551314/" aria-label="facebook-Link" role="button">
     <circle r="50" cx="50%" cy="50%" fill="white"/><use xlink:href="#facebook-icon" width="40" height="40" transform="translate(30 30)"></use></a>
@@ -212,7 +212,6 @@
     <a target="_blank" rel="noopener" href="https://www.instagram.com/u.r.g.a.s/" aria-label="instagram-icon" role="button"><circle r="50" cx="50%" cy="50%" fill="white"/><use xlink:href="#instagram-icon" width="40" height="40" transform="translate(30 30)"></use></a>
   </svg>
 </div>
-<div class="col-4"></div>
 </div><!-- end row-->
 </div> <!-- end social icons container-->
 
@@ -234,8 +233,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script> var darkOn=localStorage.getItem("modeOn");if(darkOn=="true")$("body").addClass("dark");else $("body").removeClass("dark");var sectionOn=sessionStorage.getItem("linkIsClicked");if(sectionOn=="true")$("#presentacion,#queOfrecemos").addClass("slide");else $("#presentacion,#queOfrecemos").removeClass("slide");</script><script> var menuBtn=document.querySelector(".menu-btn");var menuOpen=false;menuBtn.addEventListener("click",function(){if(!menuOpen){menuBtn.classList.add("open");menuOpen=true}else{menuBtn.classList.remove("open");menuOpen=false}});$(function(){$(".navbar-collapse a").click(function(){$(".navbar-collapse").collapse("hide")})});$(function(){$(".navbar-collapse a").click(function(){$(".menu-btn").removeClass("open");menuOpen=false})});
 $(function(){$(".navClick").click(function(){if(menuOpen===true){$("#divider").addClass("divider");$("#divider").after('<h1 id="add" style="text-align:center; font-size:0.55rem!important; margin-top: 12px;">SEGU\u00cdNOS EN NUESTRAS REDES</h1>')}else{$("#divider").removeClass("divider");$("#add").remove()}})});
-$(document).ready(function(){$("a[href='#myPage']").on("click",function(event){if(this.hash!==""){event.preventDefault();var hash=this.hash;$("html, body").animate({scrollTop:$(hash).offset().top},900,function(){window.location.hash=hash})}});$(window).scroll(function(){$(".slideanim").each(function(){var pos=$(this).offset().top;var winTop=$(window).scrollTop();if(pos<winTop+600)$(this).addClass("slide")})})});$("#toTopBtn").fadeOut();
-$(window).scroll(function(){if($(this).scrollTop()>550)$("#toTopBtn").fadeIn();else $("#toTopBtn").fadeOut()});
+$(document).ready(function(){$("a[href='#myPage'],a[href='#contact']").on("click",function(event){if(this.hash!==""){event.preventDefault();var hash=this.hash;$("html, body").animate({scrollTop:$(hash).offset().top},900,function(){window.location.hash=hash})}});$(window).scroll(function(){$(".slideanim").each(function(){var pos=$(this).offset().top;var winTop=$(window).scrollTop();if(pos<winTop+600)$(this).addClass("slide")})})});$("#toTopBtn").fadeOut();
+$(window).scroll(function() {if ($(this).scrollTop()>550){$('#toTopBtn').fadeIn();} else {$('#toTopBtn').fadeOut();}});
+function success(){
+  if(!($('#successMsg').length>0)){
+    $("#submitBtn").after('<h1 id="successMsg" class="emphasis" style="font-size:1rem;margin-top: 18px;margin-bottom: -57px;">¡Mensaje enviado!<br>Gracias por contactarnos.</h1>')
+  } setTimeout(function(){if($('#successMsg').length>0){$('#successMsg').fadeOut("slow",function(){$(this).remove();})
+    }
+  }, 5000) 
+  return true;
+}
 </script>
 </body>
 </html>
